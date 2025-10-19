@@ -1,0 +1,1 @@
+{"format_version":"1.8.0","animations":{"animation.portal.emitter":{"loop":"hold_on_last_frame","animation_length":1.0,"particle_effects":{"0.0":{"effect":"essential:portal"}}}},"triggers":[{"type":"IDLE","target":"ALL","name":"animation.portal.emitter","loops":1,"priority":1}]}

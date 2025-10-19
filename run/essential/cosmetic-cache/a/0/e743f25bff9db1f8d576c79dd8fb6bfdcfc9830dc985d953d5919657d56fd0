@@ -1,0 +1,1 @@
+{"format_version":"1.8.0","animations":{"animation.player.enderman":{"loop":true,"animation_length":1.0,"particle_effects":{"0.0":{"effect":"essential:enderman"}}}},"triggers":[{"type":"IDLE","target":"ALL","name":"animation.player.enderman","loops":1,"priority":1}]}

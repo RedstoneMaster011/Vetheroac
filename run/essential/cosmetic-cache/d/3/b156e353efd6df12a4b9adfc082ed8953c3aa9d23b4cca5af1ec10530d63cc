@@ -1,0 +1,1 @@
+{"sound_definitions":{"rollerskating_pre_sound":{"category":"hostile","max_distance":32.0,"sounds":[{"name":"sounds/rollerskating_pre","interruptible":true}]},"rollerskating_loop_sound":{"category":"hostile","max_distance":32.0,"sounds":[{"name":"sounds/rollerskating_loop","interruptible":true}]}}}

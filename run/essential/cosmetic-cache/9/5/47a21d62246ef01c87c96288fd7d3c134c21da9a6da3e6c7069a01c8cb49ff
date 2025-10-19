@@ -1,0 +1,1 @@
+[{"type":"VARIANTS","id":"UNUSED","enabled":true,"data":{"variants":[{"name":"white","color":16777215},{"name":"black","color":0},{"name":"blue","color":9031664}]}},{"type":"ARMOR_HANDLING_V2","id":"SKIRT","enabled":true,"data":{"conflicts":{"skirt":[1]}}},{"type":"COSMETIC_BONE_HIDING","id":"GRUNGE_SKIRT","enabled":true,"data":{"body":true,"legs":true}}]

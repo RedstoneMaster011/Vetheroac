@@ -1,0 +1,1 @@
+{"sound_definitions":{"em_anime_powerup_start":{"category":"hostile","max_distance":25.0,"sounds":[{"name":"sounds/em_anime_powerup_start","interruptible":true}]},"em_anime_powerup_loop":{"category":"hostile","max_distance":25.0,"sounds":[{"name":"sounds/em_anime_powerup_loop","interruptible":true}]}}}

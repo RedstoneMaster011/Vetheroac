@@ -1,0 +1,1 @@
+[{"type":"INTERRUPTS_EMOTE","id":"UNUSED","enabled":true,"data":{"MOVEMENT":true}},{"type":"ALL_OTHER_COSMETIC_OR_ITEM_HIDING","id":"UNUSED","enabled":true,"data":{}},{"type":"LOCKS_PLAYER_ROTATION","id":"UNUSED","enabled":true,"data":{"ROTATION_LOCK":true}},{"type":"PREVIEW_RESET_TIME","id":"UNUSED","enabled":true,"data":{"time":1.0E10}}]

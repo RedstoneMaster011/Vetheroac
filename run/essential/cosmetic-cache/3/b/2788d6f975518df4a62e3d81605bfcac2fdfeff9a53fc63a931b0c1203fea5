@@ -1,0 +1,1 @@
+{"sound_definitions":{"video_gaming_pre_sound":{"category":"neutral","max_distance":32.0,"sounds":[{"name":"sounds/video_gaming_pre","interruptible":true}]},"video_gaming_loop_sound":{"category":"neutral","max_distance":32.0,"sounds":[{"name":"sounds/video_gaming_loop","interruptible":true}]}}}

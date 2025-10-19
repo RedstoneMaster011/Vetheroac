@@ -1,0 +1,1 @@
+{"sound_definitions":{"ender_ascension_first_sound":{"category":"hostile","max_distance":32.0,"sounds":[{"name":"sounds/ender_ascension_first","interruptible":true}]},"ender_ascension_loop_sound":{"category":"hostile","max_distance":32.0,"sounds":[{"name":"sounds/ender_ascension_loop","interruptible":true}]}}}

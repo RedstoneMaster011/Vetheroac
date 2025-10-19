@@ -1,0 +1,15 @@
+// 1.20.1	2025-10-19T16:18:21.3043123	Vetheroac/Model Definitions
+3f7adac3aa65eb3818259f53908bb87293236dfa assets\vetheroac\blockstates\split_tnt.json
+77952b5365204f2a4068f3086fea685500fc9106 assets\vetheroac\blockstates\paint_tnt.json
+d6e13f2b28f6581235b8b86b22950b18b7c125ba assets\vetheroac\models\block\paint_tnt.json
+6d8d51ce2da2be1c9c47a10366adce23491569d3 assets\vetheroac\blockstates\cube_destroyer.json
+587877d849ebefa8b7688872000098be9a80a832 assets\vetheroac\models\block\op_tnt.json
+377ce1f9e4b2b400cbfaff4a619bbf41e499254f assets\vetheroac\blockstates\op_tnt.json
+ddcdf21a4f497c0a21edbcc50b263c4d6a2b8d2d assets\vetheroac\models\item\op_tnt.json
+c2174068adbb15e8e2b12b7f3bb5023ecb9ac138 assets\vetheroac\models\item\paint_tnt.json
+15d7e073fee9b8b8225cda3e871c73dad88a97cb assets\vetheroac\models\item\split_tnt.json
+b68666d3e164364aff182fb79be606285f00ce96 assets\vetheroac\models\item\clear_physics_entities.json
+6fddae63a8f41c8dc6f454ab46346602af36f490 assets\vetheroac\models\item\tnt_launcher.json
+5244a4f35c761d87e692c07db0809c1638e1d101 assets\vetheroac\models\item\cube_destroyer.json
+831f9f3bf5aa847bd0881561c560a96c906d21e7 assets\vetheroac\models\block\split_tnt.json
+d3663399504e6e145c8a02c7a0142bb7c59a9fd7 assets\vetheroac\models\block\cube_destroyer.json

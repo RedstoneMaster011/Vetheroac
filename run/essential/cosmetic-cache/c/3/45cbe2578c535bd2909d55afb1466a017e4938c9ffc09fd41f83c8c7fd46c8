@@ -1,0 +1,1 @@
+{"sound_definitions":{"em_demon_hover_start":{"category":"neutral","max_distance":32.0,"sounds":[{"name":"sounds/em_demon_hover_start","interruptible":true}]},"em_demon_hover_loop":{"category":"neutral","max_distance":32.0,"sounds":[{"name":"sounds/em_demon_hover_loop","interruptible":true}]}}}

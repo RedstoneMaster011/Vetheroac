@@ -1,0 +1,1 @@
+{"sound_definitions":{"fire_flight_sound":{"category":"hostile","max_distance":32.0,"sounds":[{"name":"sounds/fire_flight_first","interruptible":true}]},"fire_flight_loop_sound":{"category":"hostile","max_distance":32.0,"sounds":[{"name":"sounds/fire_flight_loop","interruptible":true}]}}}

@@ -1,0 +1,1 @@
+{"sound_definitions":{"kicking_my_feet_pre_sound":{"category":"hostile","max_distance":32.0,"sounds":[{"name":"sounds/kicking_my_feet_pre","interruptible":true}]},"kicking_my_feet_loop_sound":{"category":"hostile","max_distance":32.0,"sounds":[{"name":"sounds/kicking_my_feet_loop","interruptible":true}]}}}

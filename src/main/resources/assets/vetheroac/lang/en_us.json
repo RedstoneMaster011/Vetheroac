@@ -1,0 +1,8 @@
+{
+ "block.vetheroac.op_tnt": "Powerful TNT",
+ "block.vetheroac.split_tnt": "Split TNT",
+ "block.vetheroac.paint_tnt": "Paint TNT",
+ "block.vetheroac.cube_destroyer": "Cube Destroyer",
+  "item.vetheroac.tnt_launcher": "Tnt Launcher",
+  "item.vetheroac.clear_physics_entities": "Clear Entities"
+}

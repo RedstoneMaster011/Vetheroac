@@ -1,0 +1,1 @@
+{"sound_definitions":{"fire_hover_pre_sound":{"category":"hostile","max_distance":32.0,"sounds":[{"name":"sounds/fire_hover_pre","interruptible":true}]},"fire_hover_loop_sound":{"category":"hostile","max_distance":32.0,"sounds":[{"name":"sounds/fire_hover_loop","interruptible":true}]}}}
