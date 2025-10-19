@@ -28,6 +28,7 @@ repositories {
 dependencies {
     modImplementation name: 'velthoric-fabric-0.3.1'
     modImplementation name: 'architectury-9.2.14-fabric'
+    modImplementation name: 'modmenu-7.2.2'
 
     // To change the versions see the gradle.properties file
     minecraft "com.mojang:minecraft:${project.minecraft_version}"
