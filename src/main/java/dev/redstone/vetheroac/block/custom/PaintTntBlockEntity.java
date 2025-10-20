@@ -1,6 +1,7 @@
 package dev.redstone.vetheroac.block.custom;
 
 import dev.redstone.vetheroac.block.VetheroacBlockEntities;
+import dev.redstone.vetheroac.config.VetheroacConfigs;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
@@ -52,9 +53,9 @@ public class PaintTntBlockEntity extends BlockEntity {
         Random random = new Random();
         Block randomConcrete = concreteBlocks[random.nextInt(concreteBlocks.length)];
 
-        for (int dx = -3; dx <= 2; dx++) {
-            for (int dy = -3; dy <= 2; dy++) {
-                for (int dz = -3; dz <= 2; dz++) {
+        for (int dx = -VetheroacConfigs.VetheroacConfig.PaintTntSection.PaintSize.get(); dx <= VetheroacConfigs.VetheroacConfig.PaintTntSection.PaintSize.get() / 2; dx++) {
+            for (int dy = -VetheroacConfigs.VetheroacConfig.PaintTntSection.PaintSize.get(); dy <= VetheroacConfigs.VetheroacConfig.PaintTntSection.PaintSize.get() / 2; dy++) {
+                for (int dz = -VetheroacConfigs.VetheroacConfig.PaintTntSection.PaintSize.get(); dz <= VetheroacConfigs.VetheroacConfig.PaintTntSection.PaintSize.get() / 2; dz++) {
                     BlockPos targetPos = pos.add(dx, dy, dz);
                     BlockState currentState = world.getBlockState(targetPos);
                     if (!currentState.isAir()) {

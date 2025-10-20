@@ -1,6 +1,7 @@
 package dev.redstone.vetheroac.block.custom;
 
 import dev.redstone.vetheroac.block.VetheroacBlockEntities;
+import dev.redstone.vetheroac.config.VetheroacConfigs;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.server.MinecraftServer;
@@ -58,7 +59,7 @@ public class NightTntBlockEntity extends BlockEntity {
                     null
             );
 
-            server.getCommandManager().executeWithPrefix(source, "/time set night");
+            server.getCommandManager().executeWithPrefix(source, "/time set " + VetheroacConfigs.VetheroacConfig.NightTntSection.Time);
         }
     }
 }

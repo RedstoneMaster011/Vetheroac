@@ -1,6 +1,7 @@
 package dev.redstone.vetheroac.block.custom;
 
 import dev.redstone.vetheroac.block.VetheroacBlockEntities;
+import dev.redstone.vetheroac.config.VetheroacConfigs;
 import dev.redstone.vetheroac.entity.VetheroacEntities;
 import dev.redstone.vetheroac.entity.custom.Rex8916Entity;
 import net.minecraft.block.BlockState;
@@ -39,7 +40,7 @@ public class Rex8916TntBlockEntity extends BlockEntity {
         world.playSound(null, pos, SoundEvents.ENTITY_GENERIC_EXPLODE, SoundCategory.BLOCKS, 1.0f, 1.0f);
         world.removeBlock(pos, false);
 
-        for (int i = 0; i < 15; i++) {
+        for (int i = 0; i < VetheroacConfigs.VetheroacConfig.Rex8916TntSection.Amount.get(); i++) {
             Rex8916Entity entity = new Rex8916Entity(VetheroacEntities.REX8916, world);
 
             double x = pos.getX() + 0.5;

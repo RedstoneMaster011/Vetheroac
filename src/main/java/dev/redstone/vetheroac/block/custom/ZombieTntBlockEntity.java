@@ -45,7 +45,7 @@ public class ZombieTntBlockEntity extends BlockEntity {
         world.playSound(null, pos, SoundEvents.ENTITY_GENERIC_EXPLODE, SoundCategory.BLOCKS, 1.0f, 1.0f);
         world.removeBlock(pos, false);
 
-        for (int i = 0; i < 15; i++) {
+        for (int i = 0; i < VetheroacConfigs.VetheroacConfig.ZombieTntSection.Amount.get(); i++) {
             ZombieEntity zombie = new ZombieEntity(EntityType.ZOMBIE, world);
 
             double x = pos.getX() + 0.5;
