@@ -18,15 +18,15 @@ public class VetheroacConfig extends Config {
 
     public BaseTntSection BaseTntSection = new BaseTntSection();
 
+    @Comment("If it trys and bugfixes on join (not needed cus exploding 1 tnt does the same thing)")
+    @Name("Bugfix On Join")
+    public boolean Do_Bugfix_At_Join = true;
+
 
     public static class BaseTntSection extends ConfigSection {
         @Comment("Enables physics-based TNT explosion behavior (idk why you would want to turn this off in this mod)")
         @Name("Physics TNT")
         public boolean Physic_Based_TNT = true;
-
-        @Comment("If it trys and bugfixes on join (not needed cus exploding 1 tnt does the same thing)")
-        @Name("Bugfix On Join")
-        public boolean Do_Bugfix_At_Join = true;
 
         @Comment("Power Of TNT (0 will still explode just very weak, i would not change this unless you make it higher, and this is not size)")
         @Name("Power TNT: default: 5")
