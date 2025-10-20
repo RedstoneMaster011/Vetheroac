@@ -1,6 +1,7 @@
 package dev.redstone.vetheroac.block.custom;
 
 import dev.redstone.vetheroac.block.VetheroacBlockEntities;
+import dev.redstone.vetheroac.config.VetheroacConfigs;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.TntEntity;
@@ -33,10 +34,14 @@ public class twozeroTntBlockEntity extends BlockEntity {
 
     private void explode(World world, BlockPos pos) {
         world.removeBlock(pos, false);
-        for (int i = 0; i < 20; i++) {
-            TntEntity tnt = new TntEntity(world, pos.getX() + 0.5, pos.getY(), pos.getZ(), null);
-            tnt.setFuse(1);
-            world.spawnEntity(tnt);
+        for (int x = 0; x < 10; x++) {
+            for (int y = 0; y < 10; y++) {
+                for (int z = 0; z < 10; z++) {
+                    TntEntity tnt = new TntEntity(world, pos.getX() + 0.5 + x, pos.getY() + y - 5, pos.getZ() + 0.5 + z, null);
+                    tnt.setFuse(1);
+                    world.spawnEntity(tnt);
+                }
+            }
         }
     }
 }

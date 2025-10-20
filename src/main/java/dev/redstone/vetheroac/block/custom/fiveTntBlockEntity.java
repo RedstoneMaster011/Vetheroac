@@ -33,10 +33,14 @@ public class fiveTntBlockEntity extends BlockEntity {
 
     private void explode(World world, BlockPos pos) {
         world.removeBlock(pos, false);
-        for (int i = 0; i < 5; i++) {
-            TntEntity tnt = new TntEntity(world, pos.getX() + 0.5, pos.getY(), pos.getZ(), null);
-            tnt.setFuse(1);
-            world.spawnEntity(tnt);
+        for (int x = 0; x < 3; x++) {
+            for (int y = 0; y < 3; y++) {
+                for (int z = 0; z < 3; z++) {
+                    TntEntity tnt = new TntEntity(world, pos.getX() + 0.5 + x, pos.getY() + y - 5, pos.getZ() + 0.5 + z, null);
+                    tnt.setFuse(1);
+                    world.spawnEntity(tnt);
+                }
+            }
         }
     }
 }
