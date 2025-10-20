@@ -25,11 +25,22 @@ public class ItemList {
 
                         entries.add(VetheroacItems.Tnt_Launcher);
 
-                        entries.add(VetheroacBlocks.OP_Tnt_Block);
+                        entries.add(VetheroacBlocks.Powerful_Tnt_Block);
                         entries.add(VetheroacBlocks.Split_Tnt_Block);
                         entries.add(VetheroacBlocks.Paint_Tnt_Block);
                         entries.add(VetheroacBlocks.Cube_Destroyer_Block);
-
+                        entries.add(VetheroacBlocks.Rex8916_Tnt_Block);
+                        entries.add(VetheroacBlocks.Rain_Tnt_Block);
+                        entries.add(VetheroacBlocks.Chunk_Tnt_Block);
+                        entries.add(VetheroacBlocks.Lucky_Tnt_Block);
+                        entries.add(VetheroacBlocks.Zombie_Tnt_Block);
+                        entries.add(VetheroacBlocks.Day_Tnt_Block);
+                        entries.add(VetheroacBlocks.Night_Tnt_Block);
+                        entries.add(VetheroacBlocks.Village_Tnt_Block);
+                        entries.add(VetheroacBlocks.twozero_Tnt_Block);
+                        entries.add(VetheroacBlocks.onezero_Tnt_Block);
+                        entries.add(VetheroacBlocks.five_Tnt_Block);
+                        entries.add(VetheroacBlocks.Xray_Tnt_Block);
 
 
                     }).build());

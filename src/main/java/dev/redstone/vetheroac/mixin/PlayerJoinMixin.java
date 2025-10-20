@@ -18,7 +18,7 @@ public class PlayerJoinMixin {
         ServerPlayerEntity player = (ServerPlayerEntity)(Object)this;
         MinecraftServer server = player.getServer();
 
-        if (VetheroacConfigs.VetheroacConfig.Do_Bugfix_At_Join == false) return;
+        if (VetheroacConfigs.VetheroacConfig.BaseTntSection.Do_Bugfix_At_Join == false) return;
 
         if (server != null) {
 

@@ -1,5 +1,5 @@
-[21:24:13] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.20.1 with Fabric Loader 0.17.3
-[21:24:14] [main/INFO] (FabricLoader) Loading 67 mods:
+[15:21:45] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.20.1 with Fabric Loader 0.17.3
+[15:21:46] [main/INFO] (FabricLoader) Loading 67 mods:
 	- architectury 9.2.14
 	- essential-container 1.0.0
 	   \-- essential-loader 1.2.5
@@ -66,30 +66,37 @@
 	- mixinextras 0.5.0
 	- modmenu 7.2.2
 	- velthoric 0.3.1
-	- vetheroac 0.1
-[21:24:19] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/C:/Users/Lucas/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.16.5+mixin.0.8.7/80fc3a9f592673cea87f4cd702f87991c6c9fe4d/sponge-mixin-0.16.5+mixin.0.8.7.jar Service=Knot/Fabric Env=CLIENT
-[21:24:20] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
-[21:24:20] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_16
-[21:24:20] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_17
-[21:24:22] [main/INFO] (EssentialLoaderBase) Starting Essential Loader (stage2) version 1.6.6 (64b13bbd248a9bb10a3dc68389eacdcc) [stable]
-[21:24:22] [main/INFO] (Essential Logger - Plugin) Starting Essential v1.3.9.2 (#a263b344a3) [stable]
-[21:24:22] [main/INFO] (Essential Logger - Plugin) Java: OpenJDK 64-Bit Server VM (v23-valhalla) by Oracle Corporation (Oracle Corporation)
-[21:24:22] [main/INFO] (Essential Logger - Plugin) Java Path: C:\Users\Lucas\.jdks\valhalla-ea-23-valhalla+1-90\bin
-[21:24:22] [main/INFO] (Essential Logger - Plugin) Java Info: mixed mode, sharing
-[21:24:22] [main/INFO] (Essential Logger - Plugin) JVM Arguments: 
+	- vetheroac 0.2
+[15:21:51] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/C:/Users/Lucas/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.16.5+mixin.0.8.7/80fc3a9f592673cea87f4cd702f87991c6c9fe4d/sponge-mixin-0.16.5+mixin.0.8.7.jar Service=Knot/Fabric Env=CLIENT
+[15:21:51] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
+[15:21:51] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_17
+[15:21:53] [main/INFO] (EssentialLoaderBase) Starting Essential Loader (stage2) version 1.6.6 (64b13bbd248a9bb10a3dc68389eacdcc) [stable]
+[15:21:53] [main/INFO] (Essential Logger - Plugin) Starting Essential v1.3.9.2 (#a263b344a3) [stable]
+[15:21:53] [main/INFO] (Essential Logger - Plugin) Java: OpenJDK 64-Bit Server VM (v23-valhalla) by Oracle Corporation (Oracle Corporation)
+[15:21:53] [main/INFO] (Essential Logger - Plugin) Java Path: C:\Users\Lucas\.jdks\valhalla-ea-23-valhalla+1-90\bin
+[15:21:53] [main/INFO] (Essential Logger - Plugin) Java Info: mixed mode, sharing
+[15:21:53] [main/INFO] (Essential Logger - Plugin) JVM Arguments: 
+  - -Xmx8G
+  - -Xms4G
+  - -Ddebugger.agent.enable.coroutines=true
   - -Dfabric.dli.config=C:\Users\Lucas\Desktop\ModdingFiles\Vetheroac\.gradle\loom-cache\launch.cfg
   - -Dfabric.dli.env=client
   - -Dfabric.dli.main=net.fabricmc.loader.impl.launch.knot.KnotClient
+  - -Dkotlinx.coroutines.debug.enable.creation.stack.trace=false
+  - -Dkotlinx.coroutines.debug.enable.flows.stack.trace=true
+  - -Dkotlinx.coroutines.debug.enable.mutable.state.flows.stack.trace=true
+  - -agentlib:jdwp=transport=dt_socket,server=n,suspend=y,address=127.0.0.1:50006
+  - -javaagent:C:\Users\Lucas\AppData\Local\JetBrains\IdeaIC2025.2\captureAgent\debugger-agent.jar=file:///C:/Users/Lucas/AppData/Local/Temp/capture2911925850172230862.props
   - -Dfile.encoding=UTF-8
   - -Duser.country=US
   - -Duser.language=en
   - -Duser.variant
-[21:24:22] [main/INFO] (Essential Logger - Plugin) OS: Windows 11 (v10.0) (Arch: amd64)
-[21:24:23] [main/INFO] (FabricLoader/MixinExtras|Service) Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.0).
-[21:24:29] [Datafixer Bootstrap/INFO] (Minecraft) 188 Datafixer optimizations took 259 milliseconds
-[21:24:31] [Render thread/INFO] (Minecraft) [STDERR]: [LWJGL] [ThreadLocalUtil] Unsupported JNI version detected, this may result in a crash. Please inform LWJGL developers.
-[21:24:31] [Render thread/INFO] (Minecraft) Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[21:24:31] [Render thread/ERROR] (Minecraft) Failed to verify authentication
+[15:21:53] [main/INFO] (Essential Logger - Plugin) OS: Windows 11 (v10.0) (Arch: amd64)
+[15:21:54] [main/INFO] (FabricLoader/MixinExtras|Service) Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.0).
+[15:21:59] [Datafixer Bootstrap/INFO] (Minecraft) 188 Datafixer optimizations took 164 milliseconds
+[15:22:01] [Render thread/INFO] (Minecraft) [STDERR]: [LWJGL] [ThreadLocalUtil] Unsupported JNI version detected, this may result in a crash. Please inform LWJGL developers.
+[15:22:02] [Render thread/INFO] (Minecraft) Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[15:22:02] [Render thread/ERROR] (Minecraft) Failed to verify authentication
 com.mojang.authlib.exceptions.InvalidCredentialsException: Status: 401
 	at com.mojang.authlib.exceptions.MinecraftClientHttpException.toAuthenticationException(MinecraftClientHttpException.java:56) ~[authlib-4.0.43.jar:?]
 	at com.mojang.authlib.yggdrasil.YggdrasilUserApiService.fetchProperties(YggdrasilUserApiService.java:156) ~[authlib-4.0.43.jar:?]
@@ -107,146 +114,266 @@ Caused by: com.mojang.authlib.exceptions.MinecraftClientHttpException: Status: 4
 	at com.mojang.authlib.minecraft.client.MinecraftClient.get(MinecraftClient.java:48) ~[authlib-4.0.43.jar:?]
 	at com.mojang.authlib.yggdrasil.YggdrasilUserApiService.fetchProperties(YggdrasilUserApiService.java:129) ~[authlib-4.0.43.jar:?]
 	... 9 more
-[21:24:31] [Render thread/INFO] (Minecraft) Setting user: Player717
-[21:24:32] [Render thread/INFO] (Essential - DI) Starting DI!
-[21:24:33] [Render thread/INFO] (Essential - Connection) Authenticating to Mojang as Player717 (a126324d-4d5f-37d1-a7c2-428b903619ef)
-[21:24:33] [Render thread/INFO] (Minecraft) [STDOUT]: Registering Modded
-[21:24:33] [Essential Thread 8/WARN] (FabricLoader/Mixin) Error loading class: net/optifine/reflect/Reflector (java.lang.ClassNotFoundException: net/optifine/reflect/Reflector)
-[21:24:33] [Essential Thread 8/WARN] (FabricLoader/Mixin) Error loading class: net/optifine/reflect/Reflector (java.lang.ClassNotFoundException: net/optifine/reflect/Reflector)
-[21:24:33] [DefaultDispatcher-worker-3/INFO] (Essential - Connection) Session token appears to be invalid, trying to automatically refresh it
-[21:24:34] [Render thread/INFO] (fzzy_config) Loaded config vetheroac:vetheroac in 1000ms
-[21:24:34] [Render thread/ERROR] (Minecraft) No data fixer registered for mounting_entity
-[21:24:34] [Render thread/INFO] (NetworkManagerImpl) Registering C2S receiver with id velthoric:main_channel/31b88d8fee3b3682a7a236d9ae362b2b
-[21:24:34] [Render thread/INFO] (NetworkManagerImpl) Registering S2C receiver with id velthoric:main_channel/31b88d8fee3b3682a7a236d9ae362b2b
-[21:24:34] [Render thread/INFO] (NetworkManagerImpl) Registering C2S receiver with id velthoric:main_channel/dde5cff6fe983764b89e409564e4571c
-[21:24:34] [Render thread/INFO] (NetworkManagerImpl) Registering S2C receiver with id velthoric:main_channel/dde5cff6fe983764b89e409564e4571c
-[21:24:34] [Render thread/INFO] (NetworkManagerImpl) Registering C2S receiver with id velthoric:main_channel/64646559d7ed3d78b1ef082ea7082d34
-[21:24:34] [Render thread/INFO] (NetworkManagerImpl) Registering S2C receiver with id velthoric:main_channel/64646559d7ed3d78b1ef082ea7082d34
-[21:24:34] [Render thread/INFO] (NetworkManagerImpl) Registering C2S receiver with id velthoric:main_channel/33746189d14933dfba41e012efb94fc7
-[21:24:34] [Render thread/INFO] (NetworkManagerImpl) Registering S2C receiver with id velthoric:main_channel/33746189d14933dfba41e012efb94fc7
-[21:24:34] [Render thread/INFO] (NetworkManagerImpl) Registering C2S receiver with id velthoric:main_channel/8324ff51806a3d33a7ed4194562bb48f
-[21:24:34] [Render thread/INFO] (NetworkManagerImpl) Registering S2C receiver with id velthoric:main_channel/8324ff51806a3d33a7ed4194562bb48f
-[21:24:34] [Render thread/INFO] (NetworkManagerImpl) Registering C2S receiver with id velthoric:main_channel/e9706c1d1c4c39bf989f63ee04798542
-[21:24:34] [Render thread/INFO] (NetworkManagerImpl) Registering S2C receiver with id velthoric:main_channel/e9706c1d1c4c39bf989f63ee04798542
-[21:24:34] [Render thread/INFO] (NetworkManagerImpl) Registering C2S receiver with id velthoric:main_channel/e8783aba49e13aa9973a607a2387a9de
-[21:24:34] [Render thread/INFO] (NetworkManagerImpl) Registering S2C receiver with id velthoric:main_channel/e8783aba49e13aa9973a607a2387a9de
-[21:24:34] [Render thread/INFO] (NetworkManagerImpl) Registering C2S receiver with id velthoric:main_channel/a3f2d31d6b663a43be7e04d31caa1389
-[21:24:34] [Render thread/INFO] (NetworkManagerImpl) Registering S2C receiver with id velthoric:main_channel/a3f2d31d6b663a43be7e04d31caa1389
-[21:24:34] [Render thread/INFO] (NetworkManagerImpl) Registering C2S receiver with id velthoric:main_channel/01fac1980a72345e9ff652bccb7c4f7c
-[21:24:34] [Render thread/INFO] (NetworkManagerImpl) Registering S2C receiver with id velthoric:main_channel/01fac1980a72345e9ff652bccb7c4f7c
-[21:24:34] [Render thread/INFO] (NetworkManagerImpl) Registering C2S receiver with id velthoric:main_channel/efa7cb954c64308ba3238f97b26b7aff
-[21:24:34] [Render thread/INFO] (NetworkManagerImpl) Registering S2C receiver with id velthoric:main_channel/efa7cb954c64308ba3238f97b26b7aff
-[21:24:34] [Render thread/INFO] (NetworkManagerImpl) Registering C2S receiver with id velthoric:main_channel/d4576ae1cf553ab4924b55dc4635c80c
-[21:24:34] [Render thread/INFO] (NetworkManagerImpl) Registering S2C receiver with id velthoric:main_channel/d4576ae1cf553ab4924b55dc4635c80c
-[21:24:34] [Render thread/INFO] (NetworkManagerImpl) Registering C2S receiver with id velthoric:main_channel/7fa5a55de52b3c4eaacd9e9d91b3c5c9
-[21:24:34] [Render thread/INFO] (NetworkManagerImpl) Registering S2C receiver with id velthoric:main_channel/7fa5a55de52b3c4eaacd9e9d91b3c5c9
-[21:24:34] [Render thread/INFO] (NetworkManagerImpl) Registering C2S receiver with id velthoric:main_channel/4a3dae75b77431f598d870186a1ec2c7
-[21:24:34] [Render thread/INFO] (NetworkManagerImpl) Registering S2C receiver with id velthoric:main_channel/4a3dae75b77431f598d870186a1ec2c7
-[21:24:34] [Render thread/INFO] (NetworkManagerImpl) Registering S2C receiver with id architectury:spawn_entity_packet
-[21:24:34] [Render thread/INFO] (fzzy_config) Loaded config fzzy_config:keybinds in 43ms
-[21:24:34] [Worker-Main-1/INFO] (Mod Menu/Update Checker) Checking mod updates...
-[21:24:35] [Render thread/INFO] (Indigo) [Indigo] Registering Indigo renderer!
-[21:24:35] [Render thread/INFO] (Essential Logger) OptiFine not detected.
-[21:24:35] [Render thread/INFO] (Minecraft) Backend library: LWJGL version 3.3.2-snapshot
-[21:24:36] [Render thread/ERROR] (Essential Logger) Failed to refresh session: Unknown account
-[21:24:36] [Render thread/INFO] (Essential - Connection) Failed to authenticate to Mojang, waiting for new user-supplied session token
-[21:24:37] [Render thread/INFO] (Minecraft) Reloading ResourceManager: vanilla, fabric (fabric-data-generation-api-v1, fabric-rendering-v1, fabric-entity-events-v1, fabric-message-api-v1, fabric-language-kotlin, fabric-content-registries-v0, fabric-models-v0, fabric-api-base, fabric-resource-conditions-api-v1, essential-loader, fabric-rendering-data-attachment-v1, fabric-data-attachment-api-v1, fabric-object-builder-api-v1, fabric-renderer-registries-v1, fabric-recipe-api-v1, fabric-api, fabric-containers-v0, fabric-item-group-api-v1, vetheroac, fabric-crash-report-info-v1, fabric-registry-sync-v0, fabric-rendering-v0, fabric-command-api-v2, fabric-block-api-v1, fabric-transitive-access-wideners-v1, fabric-events-lifecycle-v0, fabric-sound-api-v1, fabric-loot-api-v2, fabric-client-tags-api-v1, fabric-particles-v1, fabric-keybindings-v0, fabric-loot-tables-v1, essential-container, fabric-gametest-api-v1, fabric-commands-v0, fabric-blockrenderlayer-v1, fabric-api-lookup-api-v1, fabric-convention-tags-v1, fabric-command-api-v1, fabric-biome-api-v1, fabric-networking-v0, fabric-networking-api-v1, fabric-screen-api-v1, fabric-model-loading-api-v1, fabric-renderer-api-v1, fzzy_config, fabric-mining-level-api-v1, fabric-lifecycle-events-v1, fabric-transfer-api-v1, modmenu, fabric-screen-handler-api-v1, fabric-block-view-api-v2, fabricloader, fabric-dimensions-v1, fabric-game-rule-api-v1, fabric-key-binding-api-v1, velthoric, fabric-rendering-fluids-v1, fabric-renderer-indigo, fabric-item-api-v1, fabric-events-interaction-v0, fabric-resource-loader-v0, essential), Essential Assets, essential
-[21:24:37] [Worker-Main-4/INFO] (Minecraft) Found unifont_all_no_pua-15.0.06.hex, loading
-[21:24:37] [Realms Notification Availability checker #1/INFO] (Minecraft) Could not authorize you against Realms server: java.lang.RuntimeException: Failed to parse into SignedJWT: FabricMC
-[21:24:39] [Render thread/WARN] (Minecraft) Missing sound for event: minecraft:item.goat_horn.play
-[21:24:39] [Render thread/WARN] (Minecraft) Missing sound for event: minecraft:entity.goat.screaming.horn_break
-[21:24:39] [Render thread/INFO] (Minecraft) OpenAL initialized on device OpenAL Soft on Headphones (Realtek(R) Audio)
-[21:24:39] [Render thread/INFO] (Minecraft) Sound engine started
-[21:24:39] [Render thread/INFO] (Minecraft) Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
-[21:24:39] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
-[21:24:39] [Render thread/INFO] (Minecraft) Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
-[21:24:39] [Render thread/INFO] (Minecraft) Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
-[21:24:39] [Render thread/INFO] (Minecraft) Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
-[21:24:39] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
-[21:24:39] [Render thread/INFO] (Minecraft) Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
-[21:24:39] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
-[21:24:39] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
-[21:24:40] [Render thread/WARN] (Minecraft) Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
-[21:24:40] [Render thread/INFO] (Minecraft) Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
-[21:24:40] [Render thread/INFO] (Minecraft) Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
-[21:24:40] [Render thread/INFO] (Minecraft) Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
-[21:24:42] [Render thread/WARN] (Minecraft) Shader cabb2374eda405e66b897908637abd1da5deac52 could not find uniform named subpixel_amount in the specified shader program.
-[21:27:13] [Render thread/INFO] (Minecraft) Loaded 7 recipes
-[21:27:14] [Render thread/INFO] (Minecraft) Loaded 1271 advancements
-[21:27:14] [Render thread/INFO] (BiomeModificationImpl) Applied 0 biome modifications to 0 of 64 new biomes in 2.108 ms
-[21:27:14] [Server thread/INFO] (Velthoric) Initialized Velthoric Persistence Manager with 4 I/O threads.
-[21:27:14] [Server thread/INFO] (Minecraft) Starting integrated minecraft server version 1.20.1
-[21:27:14] [Server thread/INFO] (Minecraft) Generating keypair
-[21:27:17] [Server thread/INFO] (Minecraft) Preparing start region for dimension minecraft:overworld
-[21:27:20] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[21:27:20] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[21:27:20] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[21:27:20] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[21:27:20] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[21:27:20] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[21:27:20] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[21:27:21] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[21:27:21] [Render thread/INFO] (Minecraft) Preparing spawn area: 46%
-[21:27:21] [Render thread/INFO] (Minecraft) Time elapsed: 4280 ms
-[21:27:22] [Server thread/INFO] (Minecraft) Summoned new Primed TNT
-[21:27:22] [Server thread/INFO] (Minecraft) Changing view distance to 12, from 10
-[21:27:22] [Server thread/INFO] (Minecraft) Changing simulation distance to 12, from 0
-[21:27:22] [Server thread/INFO] (Minecraft) Player717[local:E:1312582c] logged in with entity id 66 at (100382.39064849967, 72.9732749095057, 99777.25913139692)
-[21:27:23] [Server thread/INFO] (Minecraft) Player717 joined the game
-[21:27:23] [Render thread/INFO] (Minecraft) [System] [CHAT] [Vetheroac] Hello there, Vetheroac here, please wait until the bugfix initializer has ran before exploding anything unless you want to get bugs, but, even after this the first 1 or 2 explosions may still be buggy, this mod is still in alpha and so is the api
-[21:27:23] [Render thread/INFO] (Minecraft) Loaded 2 advancements
-[21:27:24] [Server thread/INFO] (Minecraft) Saving and pausing game...
-[21:27:24] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[21:27:24] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[21:27:24] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[21:28:09] [Server thread/INFO] (Minecraft) Saving and pausing game...
-[21:28:09] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[21:28:09] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[21:28:09] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[21:28:13] [Server thread/WARN] (Velthoric) VoxelShape conversion for BlockState Block{minecraft:grass} failed. Using default BoxShape.
-[21:28:13] [Server thread/WARN] (Velthoric) VoxelShape conversion for BlockState Block{minecraft:grass} failed. Using default BoxShape.
-[21:28:13] [Server thread/WARN] (Velthoric) VoxelShape conversion for BlockState Block{minecraft:grass} failed. Using default BoxShape.
-[21:28:13] [Server thread/WARN] (Velthoric) VoxelShape conversion for BlockState Block{minecraft:grass} failed. Using default BoxShape.
-[21:28:13] [Server thread/WARN] (Velthoric) VoxelShape conversion for BlockState Block{minecraft:grass} failed. Using default BoxShape.
-[21:28:13] [Server thread/WARN] (Velthoric) VoxelShape conversion for BlockState Block{minecraft:grass} failed. Using default BoxShape.
-[21:28:13] [Server thread/WARN] (Velthoric) VoxelShape conversion for BlockState Block{minecraft:grass} failed. Using default BoxShape.
-[21:28:13] [Server thread/WARN] (Velthoric) VoxelShape conversion for BlockState Block{minecraft:grass} failed. Using default BoxShape.
-[21:28:15] [Server thread/INFO] (Minecraft) Saving and pausing game...
-[21:28:15] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[21:28:15] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[21:28:15] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[21:28:25] [Server thread/INFO] (Minecraft) Removed 58 physics bodies.
-[21:28:25] [Render thread/INFO] (Minecraft) [System] [CHAT] [Server: Removed 58 physics bodies.]
-[21:28:25] [Render thread/INFO] (Minecraft) [System] [CHAT] [Vetheroac] Hello there, Vetheroac here, the bugfix initializer has ran feel free to explode stuff now
-[21:28:28] [Server thread/INFO] (Minecraft) Saving and pausing game...
-[21:28:28] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[21:28:28] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[21:28:28] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[21:28:31] [Server thread/INFO] (Minecraft) Saving and pausing game...
-[21:28:31] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[21:28:31] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[21:28:31] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[21:28:34] [Server thread/INFO] (Minecraft) [Player717: Removed 100 physics bodies.]
-[21:28:34] [Render thread/INFO] (Minecraft) [System] [CHAT] Removed 100 physics bodies.
-[21:29:17] [Server thread/INFO] (Minecraft) Saving and pausing game...
-[21:29:17] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[21:29:17] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[21:29:17] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[21:29:18] [Server thread/INFO] (Minecraft) Saving and pausing game...
-[21:29:18] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[21:29:18] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[21:29:18] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[21:30:39] [Render thread/INFO] (Minecraft) Stopping!
-[21:30:39] [Server thread/INFO] (Minecraft) Player717 lost connection: Disconnected
-[21:30:39] [Server thread/INFO] (Minecraft) Player717 left the game
-[21:30:39] [Server thread/INFO] (Minecraft) Stopping singleplayer server as player logged out
-[21:30:40] [Server thread/INFO] (Minecraft) Stopping server
-[21:30:40] [Server thread/INFO] (Minecraft) Saving players
-[21:30:40] [Server thread/INFO] (Minecraft) Saving worlds
-[21:30:41] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[21:30:42] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[21:30:42] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[21:30:42] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (New World): All chunks are saved
-[21:30:42] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[21:30:42] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[21:30:42] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+[15:22:02] [Render thread/INFO] (Minecraft) Setting user: Player422
+[15:22:03] [Render thread/INFO] (Essential - DI) Starting DI!
+[15:22:03] [Essential Thread 3/INFO] (Essential Logger) Refreshing the refresh token for GirliegirlGW 322a9f77-819b-4871-97fd-6ebf9f4d7bbf
+[15:22:03] [Render thread/INFO] (Essential - Connection) Authenticating to Mojang as Player422 (cb3fd6c5-1d0c-334b-a8d4-85d2c85eb576)
+[15:22:04] [Essential Thread 8/WARN] (FabricLoader/Mixin) Error loading class: net/optifine/reflect/Reflector (java.lang.ClassNotFoundException: net/optifine/reflect/Reflector)
+[15:22:04] [Essential Thread 8/WARN] (FabricLoader/Mixin) Error loading class: net/optifine/reflect/Reflector (java.lang.ClassNotFoundException: net/optifine/reflect/Reflector)
+[15:22:04] [DefaultDispatcher-worker-3/INFO] (Essential - Connection) Session token appears to be invalid, trying to automatically refresh it
+[15:22:04] [Render thread/ERROR] (Minecraft) No data fixer registered for mounting_entity
+[15:22:04] [Render thread/INFO] (NetworkManagerImpl) Registering C2S receiver with id velthoric:main_channel/31b88d8fee3b3682a7a236d9ae362b2b
+[15:22:04] [Render thread/INFO] (NetworkManagerImpl) Registering S2C receiver with id velthoric:main_channel/31b88d8fee3b3682a7a236d9ae362b2b
+[15:22:04] [Render thread/INFO] (NetworkManagerImpl) Registering C2S receiver with id velthoric:main_channel/dde5cff6fe983764b89e409564e4571c
+[15:22:04] [Render thread/INFO] (NetworkManagerImpl) Registering S2C receiver with id velthoric:main_channel/dde5cff6fe983764b89e409564e4571c
+[15:22:04] [Render thread/INFO] (NetworkManagerImpl) Registering C2S receiver with id velthoric:main_channel/64646559d7ed3d78b1ef082ea7082d34
+[15:22:04] [Render thread/INFO] (NetworkManagerImpl) Registering S2C receiver with id velthoric:main_channel/64646559d7ed3d78b1ef082ea7082d34
+[15:22:04] [Render thread/INFO] (NetworkManagerImpl) Registering C2S receiver with id velthoric:main_channel/33746189d14933dfba41e012efb94fc7
+[15:22:04] [Render thread/INFO] (NetworkManagerImpl) Registering S2C receiver with id velthoric:main_channel/33746189d14933dfba41e012efb94fc7
+[15:22:04] [Render thread/INFO] (NetworkManagerImpl) Registering C2S receiver with id velthoric:main_channel/8324ff51806a3d33a7ed4194562bb48f
+[15:22:04] [Render thread/INFO] (NetworkManagerImpl) Registering S2C receiver with id velthoric:main_channel/8324ff51806a3d33a7ed4194562bb48f
+[15:22:04] [Render thread/INFO] (NetworkManagerImpl) Registering C2S receiver with id velthoric:main_channel/e9706c1d1c4c39bf989f63ee04798542
+[15:22:04] [Render thread/INFO] (NetworkManagerImpl) Registering S2C receiver with id velthoric:main_channel/e9706c1d1c4c39bf989f63ee04798542
+[15:22:04] [Render thread/INFO] (NetworkManagerImpl) Registering C2S receiver with id velthoric:main_channel/e8783aba49e13aa9973a607a2387a9de
+[15:22:04] [Render thread/INFO] (NetworkManagerImpl) Registering S2C receiver with id velthoric:main_channel/e8783aba49e13aa9973a607a2387a9de
+[15:22:04] [Render thread/INFO] (NetworkManagerImpl) Registering C2S receiver with id velthoric:main_channel/a3f2d31d6b663a43be7e04d31caa1389
+[15:22:04] [Render thread/INFO] (NetworkManagerImpl) Registering S2C receiver with id velthoric:main_channel/a3f2d31d6b663a43be7e04d31caa1389
+[15:22:04] [Render thread/INFO] (NetworkManagerImpl) Registering C2S receiver with id velthoric:main_channel/01fac1980a72345e9ff652bccb7c4f7c
+[15:22:04] [Render thread/INFO] (NetworkManagerImpl) Registering S2C receiver with id velthoric:main_channel/01fac1980a72345e9ff652bccb7c4f7c
+[15:22:04] [Render thread/INFO] (NetworkManagerImpl) Registering C2S receiver with id velthoric:main_channel/efa7cb954c64308ba3238f97b26b7aff
+[15:22:04] [Render thread/INFO] (NetworkManagerImpl) Registering S2C receiver with id velthoric:main_channel/efa7cb954c64308ba3238f97b26b7aff
+[15:22:04] [Render thread/INFO] (NetworkManagerImpl) Registering C2S receiver with id velthoric:main_channel/d4576ae1cf553ab4924b55dc4635c80c
+[15:22:04] [Render thread/INFO] (NetworkManagerImpl) Registering S2C receiver with id velthoric:main_channel/d4576ae1cf553ab4924b55dc4635c80c
+[15:22:04] [Render thread/INFO] (NetworkManagerImpl) Registering C2S receiver with id velthoric:main_channel/7fa5a55de52b3c4eaacd9e9d91b3c5c9
+[15:22:04] [Render thread/INFO] (NetworkManagerImpl) Registering S2C receiver with id velthoric:main_channel/7fa5a55de52b3c4eaacd9e9d91b3c5c9
+[15:22:04] [Render thread/INFO] (NetworkManagerImpl) Registering C2S receiver with id velthoric:main_channel/4a3dae75b77431f598d870186a1ec2c7
+[15:22:04] [Render thread/INFO] (NetworkManagerImpl) Registering S2C receiver with id velthoric:main_channel/4a3dae75b77431f598d870186a1ec2c7
+[15:22:04] [Essential Thread 3/INFO] (Minecraft) [STDOUT]: 400: {"error":"invalid_grant","error_description":"The user could not be authenticated as the grant is expired. The user must sign in again.","correlation_id":"b39cbd68-fa2b-4cdf-aca9-e7521c446da2"}
+[15:22:04] [Essential Thread 3/INFO] (Minecraft) [STDOUT]: {
+  "error": "invalid_grant",
+  "error_description": "The user could not be authenticated as the grant is expired. The user must sign in again.",
+  "correlation_id": "b39cbd68-fa2b-4cdf-aca9-e7521c446da2"
+}
+[15:22:04] [Render thread/INFO] (Minecraft) [STDOUT]: Registering Modded
+[15:22:05] [Render thread/INFO] (fzzy_config) Loaded config vetheroac:vetheroac in 1236ms
+[15:22:05] [Render thread/ERROR] (Minecraft) No data fixer registered for rex8916
+[15:22:06] [Worker-Main-1/INFO] (Mod Menu/Update Checker) Checking mod updates...
+[15:22:06] [Render thread/INFO] (fzzy_config) Loaded config fzzy_config:keybinds in 50ms
+[15:22:06] [Render thread/INFO] (NetworkManagerImpl) Registering S2C receiver with id architectury:spawn_entity_packet
+[15:22:06] [Render thread/INFO] (Indigo) [Indigo] Registering Indigo renderer!
+[15:22:06] [Render thread/INFO] (Essential Logger) OptiFine not detected.
+[15:22:06] [Render thread/INFO] (Minecraft) Backend library: LWJGL version 3.3.2-snapshot
+[15:22:07] [Render thread/ERROR] (Essential Logger) Failed to refresh session: Unknown account
+[15:22:07] [Render thread/INFO] (Essential - Connection) Failed to authenticate to Mojang, waiting for new user-supplied session token
+[15:22:08] [Render thread/INFO] (Minecraft) Reloading ResourceManager: vanilla, fabric (fabric-rendering-data-attachment-v1, essential-loader, fabric-keybindings-v0, essential-container, fabric-command-api-v2, fabric-content-registries-v0, fabric-particles-v1, fabric-dimensions-v1, fabric-api-lookup-api-v1, fabric-transfer-api-v1, fabric-model-loading-api-v1, fabric-language-kotlin, velthoric, fabric-object-builder-api-v1, fabric-lifecycle-events-v1, fabric-client-tags-api-v1, fabric-recipe-api-v1, fabric-networking-api-v1, fabric-key-binding-api-v1, fabric-mining-level-api-v1, fabric-commands-v0, fabric-loot-tables-v1, fabric-transitive-access-wideners-v1, fabric-blockrenderlayer-v1, fabric-registry-sync-v0, fabricloader, fabric-resource-conditions-api-v1, fabric-gametest-api-v1, fabric-crash-report-info-v1, fabric-command-api-v1, fabric-resource-loader-v0, fabric-sound-api-v1, fabric-networking-v0, fabric-screen-handler-api-v1, fabric-renderer-registries-v1, vetheroac, fabric-api, fabric-rendering-fluids-v1, fabric-item-api-v1, fabric-data-attachment-api-v1, fabric-events-interaction-v0, fabric-events-lifecycle-v0, fabric-message-api-v1, fabric-game-rule-api-v1, fabric-item-group-api-v1, fabric-entity-events-v1, fabric-rendering-v1, fabric-block-api-v1, fabric-api-base, fabric-screen-api-v1, modmenu, fabric-loot-api-v2, fzzy_config, fabric-renderer-api-v1, fabric-convention-tags-v1, fabric-data-generation-api-v1, fabric-models-v0, fabric-rendering-v0, fabric-biome-api-v1, fabric-renderer-indigo, fabric-containers-v0, fabric-block-view-api-v2, essential), Essential Assets, essential
+[15:22:08] [Worker-Main-11/INFO] (Minecraft) Found unifont_all_no_pua-15.0.06.hex, loading
+[15:22:09] [Realms Notification Availability checker #1/INFO] (Minecraft) Could not authorize you against Realms server: java.lang.RuntimeException: Failed to parse into SignedJWT: FabricMC
+[15:22:09] [Worker-Main-6/WARN] (Minecraft) Texture vetheroac:block/rex8916_tnt with size 8x8 limits mip level from 4 to 3
+[15:22:09] [Worker-Main-6/WARN] (Minecraft) minecraft:textures/atlas/blocks.png: dropping miplevel from 4 to 3, because of minimum power of two: 8
+[15:22:10] [Render thread/WARN] (Minecraft) Missing sound for event: minecraft:item.goat_horn.play
+[15:22:10] [Render thread/WARN] (Minecraft) Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[15:22:10] [Render thread/INFO] (Minecraft) OpenAL initialized on device OpenAL Soft on Headphones (Realtek(R) Audio)
+[15:22:10] [Render thread/INFO] (Minecraft) Sound engine started
+[15:22:10] [Render thread/INFO] (Minecraft) Created: 1024x512x3 minecraft:textures/atlas/blocks.png-atlas
+[15:22:10] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
+[15:22:10] [Render thread/INFO] (Minecraft) Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[15:22:10] [Render thread/INFO] (Minecraft) Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[15:22:10] [Render thread/INFO] (Minecraft) Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
+[15:22:10] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[15:22:10] [Render thread/INFO] (Minecraft) Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
+[15:22:10] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[15:22:10] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[15:22:11] [Render thread/WARN] (Minecraft) Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
+[15:22:11] [Render thread/INFO] (Minecraft) Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
+[15:22:11] [Render thread/INFO] (Minecraft) Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
+[15:22:11] [Render thread/INFO] (Minecraft) Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[15:22:13] [Render thread/WARN] (Minecraft) Shader cabb2374eda405e66b897908637abd1da5deac52 could not find uniform named subpixel_amount in the specified shader program.
+[15:22:17] [Render thread/INFO] (Essential Logger) Successfully refreshed session token.
+[15:22:18] [Render thread/INFO] (Essential - Connection) Authenticating to Mojang as RedstoneMaster01 (a3993cb7-f95a-45b4-b13c-e7b6325bacdc)
+[15:22:18] [Worker-Main-2/ERROR] (Minecraft) Signature is missing from Property textures
+[15:22:18] [DefaultDispatcher-worker-2/INFO] (Essential - Connection) Connecting to Essential Connection Manager...
+[15:22:18] [DefaultDispatcher-worker-2/INFO] (Essential Logger) Using Default JreDnsResolver
+[15:22:18] [DefaultDispatcher-worker-2/INFO] (Essential Logger) Using Default JreSocketFactory
+[15:22:18] [WebSocketConnectReadThread-155/INFO] (Essential - Connection) Connected to Essential Connection Manager.
+[15:22:19] [Render thread/ERROR] (Minecraft) Signature is missing from Property textures
+[15:22:24] [Render thread/ERROR] (EssentialMarkdown) Failed to layout markdown
+java.lang.ArrayIndexOutOfBoundsException: Index -2 out of bounds for length 61
+	at java.util.concurrent.CopyOnWriteArrayList.elementAt(CopyOnWriteArrayList.java:390) ~[?:?]
+	at java.util.concurrent.CopyOnWriteArrayList.get(CopyOnWriteArrayList.java:403) ~[?:?]
+	at gg.essential.elementa.utils.ObservableList.get(ObservableList.kt) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.constraints.SiblingConstraint.getYPositionImpl(SiblingConstraint.kt:59) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.constraints.YConstraint.getYPosition(Constraint.kt:86) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.UIConstraints.getY(UIConstraints.kt:63) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.UIComponent.getTop(UIComponent.kt:460) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.constraints.SiblingConstraint.getYPositionImpl(SiblingConstraint.kt:58) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.constraints.YConstraint.getYPosition(Constraint.kt:86) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.UIConstraints.getY(UIConstraints.kt:63) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.UIComponent.getTop(UIComponent.kt:460) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.UIComponent.getBottom(UIComponent.kt:464) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.constraints.SiblingConstraint.getLowestPoint(SiblingConstraint.kt:65) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.constraints.SiblingConstraint.getYPositionImpl(SiblingConstraint.kt:60) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.constraints.YConstraint.getYPosition(Constraint.kt:86) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.UIConstraints.getY(UIConstraints.kt:63) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.UIComponent.getTop(UIComponent.kt:460) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.constraints.SiblingConstraint.getYPositionImpl(SiblingConstraint.kt:58) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.constraints.YConstraint.getYPosition(Constraint.kt:86) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.UIConstraints.getY(UIConstraints.kt:63) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.UIComponent.getTop(UIComponent.kt:460) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.constraints.PixelConstraint.getYPositionImpl(PixelConstraint.kt:86) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.constraints.YConstraint.getYPosition(Constraint.kt:86) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.UIConstraints.getY(UIConstraints.kt:63) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.UIComponent.getTop(UIComponent.kt:460) ~[elementa-708-dev.jar:?]
+	at gg.essential.gui.elementa.essentialmarkdown.EssentialMarkdown.layout(EssentialMarkdown.kt:155) ~[Essential%20(fabric_1.20.1)-dev.jar:?]
+	at gg.essential.gui.elementa.essentialmarkdown.EssentialMarkdown.update(EssentialMarkdown.kt:190) ~[Essential%20(fabric_1.20.1)-dev.jar:?]
+	at gg.essential.gui.common.constraints.MarkdownContentWidthConstraint.getWidthImpl(MarkdownContentWidthConstraint.kt:39) ~[Essential%20(fabric_1.20.1)-dev.jar:?]
+	at gg.essential.elementa.constraints.WidthConstraint.getWidth(Constraint.kt:102) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.UIConstraints.getWidth(UIConstraints.kt:71) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.UIComponent.getWidth(UIComponent.kt:466) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.constraints.ChildBasedMaxSizeConstraint.getWidthImpl(ChildBasedConstraints.kt:49) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.constraints.WidthConstraint.getWidth(Constraint.kt:102) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.constraints.AdditiveConstraint.getWidthImpl(AdditiveConstraint.kt:35) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.constraints.WidthConstraint.getWidth(Constraint.kt:102) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.UIConstraints.getWidth(UIConstraints.kt:71) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.UIComponent.getWidth(UIComponent.kt:466) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.constraints.PixelConstraint.getXPositionImpl(PixelConstraint.kt:61) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.constraints.XConstraint.getXPosition(Constraint.kt:79) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.UIConstraints.getX(UIConstraints.kt:55) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.UIComponent.getLeft(UIComponent.kt:458) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.constraints.CenterConstraint.getXPositionImpl(CenterConstraint.kt:21) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.constraints.XConstraint.getXPosition(Constraint.kt:79) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.UIConstraints.getX(UIConstraints.kt:55) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.UIComponent.getLeft(UIComponent.kt:458) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.constraints.PixelConstraint.getXPositionImpl(PixelConstraint.kt:67) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.constraints.XConstraint.getXPosition(Constraint.kt:79) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.UIConstraints.getX(UIConstraints.kt:55) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.UIComponent.getLeft(UIComponent.kt:458) ~[elementa-708-dev.jar:?]
+	at gg.essential.gui.elementa.essentialmarkdown.EssentialMarkdown.layout(EssentialMarkdown.kt:154) ~[Essential%20(fabric_1.20.1)-dev.jar:?]
+	at gg.essential.gui.elementa.essentialmarkdown.EssentialMarkdown.update(EssentialMarkdown.kt:190) ~[Essential%20(fabric_1.20.1)-dev.jar:?]
+	at gg.essential.gui.elementa.essentialmarkdown.EssentialMarkdown$8.invoke(EssentialMarkdown.kt:183) ~[Essential%20(fabric_1.20.1)-dev.jar:?]
+	at gg.essential.gui.elementa.essentialmarkdown.EssentialMarkdown$8.invoke(EssentialMarkdown.kt:183) ~[Essential%20(fabric_1.20.1)-dev.jar:?]
+	at gg.essential.elementa.components.Window.doDraw(Window.kt:117) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.components.Window.draw(Window.kt:73) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.WindowScreen.onDrawScreen(WindowScreen.kt:60) ~[elementa-708-dev.jar:?]
+	at gg.essential.gui.InternalEssentialGUI.onDrawScreen(InternalEssentialGUI.kt:49) ~[Essential%20(fabric_1.20.1)-dev.jar:?]
+	at gg.essential.universal.UScreen.onDrawScreen(UScreen.kt:391) ~[universalcraft-1.20.1-fabric-430-dev.jar:?]
+	at gg.essential.universal.UScreen$onDrawScreenCompat$1.invoke(UScreen.kt:397) ~[universalcraft-1.20.1-fabric-430-dev.jar:?]
+	at gg.essential.universal.UScreen$onDrawScreenCompat$1.invoke(UScreen.kt:395) ~[universalcraft-1.20.1-fabric-430-dev.jar:?]
+	at gg.essential.universal.UMatrixStack$Compat.runLegacyMethod(UMatrixStack.kt:357) ~[universalcraft-1.20.1-fabric-430-dev.jar:?]
+	at gg.essential.universal.UScreen.onDrawScreenCompat(UScreen.kt:395) ~[universalcraft-1.20.1-fabric-430-dev.jar:?]
+	at gg.essential.universal.UScreen.render(UScreen.kt:125) ~[universalcraft-1.20.1-fabric-430-dev.jar:?]
+	at net.minecraft.client.gui.screen.Screen.renderWithTooltip(Screen.java:110) ~[minecraft-merged-bf575f6df2-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+	at net.minecraft.client.render.GameRenderer.render(GameRenderer.java:945) ~[minecraft-merged-bf575f6df2-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+	at net.minecraft.client.MinecraftClient.render(MinecraftClient.java:1219) ~[minecraft-merged-bf575f6df2-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+	at net.minecraft.client.MinecraftClient.run(MinecraftClient.java:802) ~[minecraft-merged-bf575f6df2-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+	at net.minecraft.client.main.Main.main(Main.java:250) ~[minecraft-merged-bf575f6df2-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:506) ~[fabric-loader-0.17.3.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:72) ~[fabric-loader-0.17.3.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23) ~[fabric-loader-0.17.3.jar:?]
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) ~[dev-launch-injector-0.2.1+build.8.jar:?]
+[15:22:24] [Render thread/ERROR] (EssentialMarkdown) Failed to layout markdown
+java.lang.ArrayIndexOutOfBoundsException: Index -2 out of bounds for length 61
+	at java.util.concurrent.CopyOnWriteArrayList.elementAt(CopyOnWriteArrayList.java:390) ~[?:?]
+	at java.util.concurrent.CopyOnWriteArrayList.get(CopyOnWriteArrayList.java:403) ~[?:?]
+	at gg.essential.elementa.utils.ObservableList.get(ObservableList.kt) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.constraints.SiblingConstraint.getYPositionImpl(SiblingConstraint.kt:59) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.constraints.YConstraint.getYPosition(Constraint.kt:86) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.UIConstraints.getY(UIConstraints.kt:63) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.UIComponent.getTop(UIComponent.kt:460) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.constraints.SiblingConstraint.getYPositionImpl(SiblingConstraint.kt:58) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.constraints.YConstraint.getYPosition(Constraint.kt:86) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.UIConstraints.getY(UIConstraints.kt:63) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.UIComponent.getTop(UIComponent.kt:460) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.UIComponent.getBottom(UIComponent.kt:464) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.constraints.SiblingConstraint.getLowestPoint(SiblingConstraint.kt:65) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.constraints.SiblingConstraint.getYPositionImpl(SiblingConstraint.kt:60) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.constraints.YConstraint.getYPosition(Constraint.kt:86) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.UIConstraints.getY(UIConstraints.kt:63) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.UIComponent.getTop(UIComponent.kt:460) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.constraints.SiblingConstraint.getYPositionImpl(SiblingConstraint.kt:58) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.constraints.YConstraint.getYPosition(Constraint.kt:86) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.UIConstraints.getY(UIConstraints.kt:63) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.UIComponent.getTop(UIComponent.kt:460) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.constraints.PixelConstraint.getYPositionImpl(PixelConstraint.kt:86) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.constraints.YConstraint.getYPosition(Constraint.kt:86) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.UIConstraints.getY(UIConstraints.kt:63) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.UIComponent.getTop(UIComponent.kt:460) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.constraints.PixelConstraint.getYPositionImpl(PixelConstraint.kt:86) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.constraints.YConstraint.getYPosition(Constraint.kt:86) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.UIConstraints.getY(UIConstraints.kt:63) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.UIComponent.getTop(UIComponent.kt:460) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.constraints.PixelConstraint.getYPositionImpl(PixelConstraint.kt:86) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.constraints.YConstraint.getYPosition(Constraint.kt:86) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.UIConstraints.getY(UIConstraints.kt:63) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.UIComponent.getTop(UIComponent.kt:460) ~[elementa-708-dev.jar:?]
+	at gg.essential.gui.elementa.essentialmarkdown.EssentialMarkdown.layout(EssentialMarkdown.kt:155) ~[Essential%20(fabric_1.20.1)-dev.jar:?]
+	at gg.essential.gui.elementa.essentialmarkdown.EssentialMarkdown.update(EssentialMarkdown.kt:190) ~[Essential%20(fabric_1.20.1)-dev.jar:?]
+	at gg.essential.gui.elementa.essentialmarkdown.EssentialMarkdown$8.invoke(EssentialMarkdown.kt:183) ~[Essential%20(fabric_1.20.1)-dev.jar:?]
+	at gg.essential.gui.elementa.essentialmarkdown.EssentialMarkdown$8.invoke(EssentialMarkdown.kt:183) ~[Essential%20(fabric_1.20.1)-dev.jar:?]
+	at gg.essential.elementa.components.Window.doDraw(Window.kt:117) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.components.Window.draw(Window.kt:73) ~[elementa-708-dev.jar:?]
+	at gg.essential.elementa.WindowScreen.onDrawScreen(WindowScreen.kt:60) ~[elementa-708-dev.jar:?]
+	at gg.essential.gui.InternalEssentialGUI.onDrawScreen(InternalEssentialGUI.kt:49) ~[Essential%20(fabric_1.20.1)-dev.jar:?]
+	at gg.essential.universal.UScreen.onDrawScreen(UScreen.kt:391) ~[universalcraft-1.20.1-fabric-430-dev.jar:?]
+	at gg.essential.universal.UScreen$onDrawScreenCompat$1.invoke(UScreen.kt:397) ~[universalcraft-1.20.1-fabric-430-dev.jar:?]
+	at gg.essential.universal.UScreen$onDrawScreenCompat$1.invoke(UScreen.kt:395) ~[universalcraft-1.20.1-fabric-430-dev.jar:?]
+	at gg.essential.universal.UMatrixStack$Compat.runLegacyMethod(UMatrixStack.kt:357) ~[universalcraft-1.20.1-fabric-430-dev.jar:?]
+	at gg.essential.universal.UScreen.onDrawScreenCompat(UScreen.kt:395) ~[universalcraft-1.20.1-fabric-430-dev.jar:?]
+	at gg.essential.universal.UScreen.render(UScreen.kt:125) ~[universalcraft-1.20.1-fabric-430-dev.jar:?]
+	at net.minecraft.client.gui.screen.Screen.renderWithTooltip(Screen.java:110) ~[minecraft-merged-bf575f6df2-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+	at net.minecraft.client.render.GameRenderer.render(GameRenderer.java:945) ~[minecraft-merged-bf575f6df2-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+	at net.minecraft.client.MinecraftClient.render(MinecraftClient.java:1219) ~[minecraft-merged-bf575f6df2-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+	at net.minecraft.client.MinecraftClient.run(MinecraftClient.java:802) ~[minecraft-merged-bf575f6df2-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+	at net.minecraft.client.main.Main.main(Main.java:250) ~[minecraft-merged-bf575f6df2-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:506) ~[fabric-loader-0.17.3.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:72) ~[fabric-loader-0.17.3.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23) ~[fabric-loader-0.17.3.jar:?]
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) ~[dev-launch-injector-0.2.1+build.8.jar:?]
+[15:22:25] [Render thread/ERROR] (Minecraft) Signature is missing from Property textures
+[15:22:28] [Render thread/INFO] (Minecraft) Loaded 7 recipes
+[15:22:28] [Render thread/INFO] (Minecraft) Loaded 1271 advancements
+[15:22:29] [Render thread/INFO] (BiomeModificationImpl) Applied 0 biome modifications to 0 of 64 new biomes in 2.213 ms
+[15:22:29] [Server thread/INFO] (Velthoric) Initialized Velthoric Persistence Manager with 4 I/O threads.
+[15:22:29] [Server thread/INFO] (Minecraft) Starting integrated minecraft server version 1.20.1
+[15:22:29] [Server thread/INFO] (Minecraft) Generating keypair
+[15:22:30] [Server thread/INFO] (Minecraft) Preparing start region for dimension minecraft:overworld
+[15:22:33] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[15:22:33] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[15:22:33] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[15:22:33] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[15:22:33] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[15:22:33] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[15:22:33] [Render thread/INFO] (Minecraft) Preparing spawn area: 13%
+[15:22:34] [Render thread/INFO] (Minecraft) Preparing spawn area: 69%
+[15:22:34] [Render thread/INFO] (Minecraft) Time elapsed: 3663 ms
+[15:22:34] [Server thread/INFO] (Minecraft) Summoned new Primed TNT
+[15:22:34] [Server thread/INFO] (Minecraft) Changing view distance to 5, from 10
+[15:22:34] [Server thread/INFO] (Minecraft) Changing simulation distance to 5, from 0
+[15:22:35] [Server thread/INFO] (Minecraft) RedstoneMaster01[local:E:70d50270] logged in with entity id 20 at (100603.72213418219, 98.23075114477219, 99902.88078143603)
+[15:22:35] [Server thread/INFO] (Minecraft) RedstoneMaster01 joined the game
+[15:22:35] [Render thread/INFO] (Minecraft) [System] [CHAT] [Vetheroac] Hello there, Vetheroac here, please wait until the bugfix initializer has ran before exploding anything unless you want to get bugs, but, even after this the first 1 or 2 explosions may still be buggy, this mod is still in alpha and so is the api
+[15:22:35] [Render thread/ERROR] (Minecraft) Signature is missing from Property textures
+[15:22:36] [Render thread/INFO] (Minecraft) Loaded 2 advancements
+[15:22:59] [Server thread/INFO] (Minecraft) Removed 0 physics bodies.
+[15:22:59] [Render thread/INFO] (Minecraft) [System] [CHAT] [Server: Removed 0 physics bodies.]
+[15:22:59] [Render thread/INFO] (Minecraft) [System] [CHAT] [Vetheroac] Hello there, Vetheroac here, the bugfix initializer has ran feel free to explode stuff now
+[15:24:03] [Render thread/INFO] (Minecraft) [System] [CHAT] [Debug]: Chunk borders: shown
+[15:24:04] [Render thread/INFO] (Minecraft) [System] [CHAT] [Debug]: Chunk borders: hidden
+[15:24:05] [Render thread/ERROR] (Minecraft) Signature is missing from Property textures
+[15:24:05] [Server thread/INFO] (Minecraft) Saving and pausing game...
+[15:24:05] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[15:24:05] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[15:24:05] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[15:24:06] [Render thread/INFO] (Minecraft) Stopping!
+[15:24:06] [Server thread/INFO] (Minecraft) RedstoneMaster01 lost connection: Disconnected
+[15:24:06] [Server thread/INFO] (Minecraft) RedstoneMaster01 left the game
+[15:24:06] [Server thread/INFO] (Minecraft) Stopping singleplayer server as player logged out
+[15:24:06] [Server thread/INFO] (Minecraft) Stopping server
+[15:24:06] [Server thread/INFO] (Minecraft) Saving players
+[15:24:06] [Server thread/INFO] (Minecraft) Saving worlds
+[15:24:07] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[15:24:08] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[15:24:08] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[15:24:08] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (New World): All chunks are saved
+[15:24:08] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[15:24:08] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[15:24:08] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved

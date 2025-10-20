@@ -7,15 +7,15 @@ import net.minecraft.entity.TntEntity;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-public class OPTntBlockEntity extends BlockEntity {
+public class onezeroTntBlockEntity extends BlockEntity {
     private boolean triggered = false;
     private int ticks = 0;
 
-    public OPTntBlockEntity(BlockPos pos, BlockState state) {
-        super(VetheroacBlockEntities.OP_TNT_BLOCK_ENTITY, pos, state);
+    public onezeroTntBlockEntity(BlockPos pos, BlockState state) {
+        super(VetheroacBlockEntities.ONEZERO_TNT_BLOCK_ENTITY, pos, state);
     }
 
-    public static void tick(World world, BlockPos pos, BlockState state, OPTntBlockEntity entity) {
+    public static void tick(World world, BlockPos pos, BlockState state, onezeroTntBlockEntity entity) {
         if (!entity.triggered) return;
 
         entity.ticks++;
@@ -33,14 +33,10 @@ public class OPTntBlockEntity extends BlockEntity {
 
     private void explode(World world, BlockPos pos) {
         world.removeBlock(pos, false);
-        for (int x = 0; x < 2; x++) {
-            for (int y = 0; y < 2; y++) {
-                for (int z = 0; z < 2; z++) {
-                    TntEntity tnt = new TntEntity(world, pos.getX() + 0.5 + x, pos.getY() + y - 5, pos.getZ() + 0.5 + z, null);
-                    tnt.setFuse(1);
-                    world.spawnEntity(tnt);
-                }
-            }
+        for (int i = 0; i < 10; i++) {
+            TntEntity tnt = new TntEntity(world, pos.getX() + 0.5, pos.getY(), pos.getZ(), null);
+            tnt.setFuse(1);
+            world.spawnEntity(tnt);
         }
     }
 }

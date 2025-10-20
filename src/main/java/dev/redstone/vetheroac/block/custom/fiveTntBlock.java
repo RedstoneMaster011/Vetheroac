@@ -29,26 +29,26 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class OPTntBlock extends BlockWithEntity {
+public class fiveTntBlock extends BlockWithEntity {
 
     @Override
     public BlockRenderType getRenderType(BlockState state) {
         return BlockRenderType.MODEL;
     }
 
-    public OPTntBlock(Settings settings) {
+    public fiveTntBlock(Settings settings) {
         super(settings);
     }
 
     @Override
     public BlockEntity createBlockEntity(BlockPos pos, BlockState state) {
-        return new OPTntBlockEntity(pos, state);
+        return new fiveTntBlockEntity(pos, state);
     }
 
     @Nullable
     @Override
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(World world, BlockState state, BlockEntityType<T> type) {
-        return world.isClient ? null : checkType(type, VetheroacBlockEntities.OP_TNT_BLOCK_ENTITY, OPTntBlockEntity::tick);
+        return world.isClient ? null : checkType(type, VetheroacBlockEntities.FIVE_TNT_BLOCK_ENTITY, fiveTntBlockEntity::tick);
     }
 
     @Override
@@ -120,7 +120,7 @@ public class OPTntBlock extends BlockWithEntity {
         world.playSound(null, pos, SoundEvents.ENTITY_TNT_PRIMED, SoundCategory.BLOCKS, 1.0f, 1.0f);
 
         BlockEntity be = world.getBlockEntity(pos);
-        if (be instanceof OPTntBlockEntity tnt) {
+        if (be instanceof fiveTntBlockEntity tnt) {
             tnt.trigger();
         }
 

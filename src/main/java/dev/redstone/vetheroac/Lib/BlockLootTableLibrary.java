@@ -11,8 +11,19 @@ public class BlockLootTableLibrary extends FabricBlockLootTableProvider {
 
     @Override
     public void generate() {
-        addDrop(VetheroacBlocks.OP_Tnt_Block);
+        addDrop(VetheroacBlocks.Powerful_Tnt_Block);
         addDrop(VetheroacBlocks.Split_Tnt_Block);
         addDrop(VetheroacBlocks.Paint_Tnt_Block);
+        addDrop(VetheroacBlocks.Rain_Tnt_Block);
+        addDrop(VetheroacBlocks.Chunk_Tnt_Block);
+        addDrop(VetheroacBlocks.Lucky_Tnt_Block);
+        addDrop(VetheroacBlocks.Zombie_Tnt_Block);
+        addDrop(VetheroacBlocks.Day_Tnt_Block);
+        addDrop(VetheroacBlocks.Night_Tnt_Block);
+        addDrop(VetheroacBlocks.Village_Tnt_Block);
+        addDrop(VetheroacBlocks.twozero_Tnt_Block);
+        addDrop(VetheroacBlocks.onezero_Tnt_Block);
+        addDrop(VetheroacBlocks.five_Tnt_Block);
+        addDrop(VetheroacBlocks.Xray_Tnt_Block);
     }
 }

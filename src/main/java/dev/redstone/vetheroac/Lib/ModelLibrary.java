@@ -15,10 +15,22 @@ public class ModelLibrary extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-        blockStateModelGenerator.registerSimpleCubeAll(VetheroacBlocks.OP_Tnt_Block);
+        blockStateModelGenerator.registerSimpleCubeAll(VetheroacBlocks.Powerful_Tnt_Block);
         blockStateModelGenerator.registerSimpleCubeAll(VetheroacBlocks.Split_Tnt_Block);
         blockStateModelGenerator.registerSimpleCubeAll(VetheroacBlocks.Paint_Tnt_Block);
         blockStateModelGenerator.registerSimpleCubeAll(VetheroacBlocks.Cube_Destroyer_Block);
+        blockStateModelGenerator.registerSimpleCubeAll(VetheroacBlocks.Rex8916_Tnt_Block);
+        blockStateModelGenerator.registerSimpleCubeAll(VetheroacBlocks.Rain_Tnt_Block);
+        blockStateModelGenerator.registerSimpleCubeAll(VetheroacBlocks.Chunk_Tnt_Block);
+        blockStateModelGenerator.registerSimpleCubeAll(VetheroacBlocks.Lucky_Tnt_Block);
+        blockStateModelGenerator.registerSimpleCubeAll(VetheroacBlocks.Zombie_Tnt_Block);
+        blockStateModelGenerator.registerSimpleCubeAll(VetheroacBlocks.Day_Tnt_Block);
+        blockStateModelGenerator.registerSimpleCubeAll(VetheroacBlocks.Night_Tnt_Block);
+        blockStateModelGenerator.registerSimpleCubeAll(VetheroacBlocks.Village_Tnt_Block);
+        blockStateModelGenerator.registerSimpleCubeAll(VetheroacBlocks.twozero_Tnt_Block);
+        blockStateModelGenerator.registerSimpleCubeAll(VetheroacBlocks.onezero_Tnt_Block);
+        blockStateModelGenerator.registerSimpleCubeAll(VetheroacBlocks.five_Tnt_Block);
+        blockStateModelGenerator.registerSimpleCubeAll(VetheroacBlocks.Xray_Tnt_Block);
 
     }
 

@@ -3,6 +3,7 @@ package dev.redstone.vetheroac;
 import dev.redstone.vetheroac.block.VetheroacBlockEntities;
 import dev.redstone.vetheroac.block.VetheroacBlocks;
 import dev.redstone.vetheroac.config.VetheroacConfigs;
+import dev.redstone.vetheroac.entity.VetheroacEntities;
 import dev.redstone.vetheroac.item.ItemList;
 import dev.redstone.vetheroac.item.VetheroacItems;
 import dev.redstone.vetheroac.physics.VetheroacBodys;
@@ -18,6 +19,8 @@ public class Vetheroac implements ModInitializer {
         VetheroacBodys.register();
 
         VetheroacConfigs.init();
+
+        VetheroacEntities.register();
 
 
         VetheroacBlocks.RegisterBlocks();

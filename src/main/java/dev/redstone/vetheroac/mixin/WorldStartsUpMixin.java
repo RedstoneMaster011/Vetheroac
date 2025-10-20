@@ -26,7 +26,7 @@ public class WorldStartsUpMixin {
 
         VetheroacConfig config = new VetheroacConfig();
 
-        if (config.Do_Bugfix_At_Join == false) return;
+        if (config.BaseTntSection.Do_Bugfix_At_Join == false) return;
 
         if (overworld != null) {
             server.getCommandManager().executeWithPrefix(server.getCommandSource(), "/summon minecraft:tnt 0 0 0");
