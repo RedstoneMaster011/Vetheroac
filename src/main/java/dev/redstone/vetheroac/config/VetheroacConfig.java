@@ -86,8 +86,8 @@ public class VetheroacConfig extends Config {
 
     public static class NightTntSection extends ConfigSection {
         @Comment("Time Of Day")
-        @Name("Time: default: 1000")
-        public int Time = 1000;
+        @Name("Time: default: 18000")
+        public int Time = 18000;
     }
 
     public ZombieTntSection ZombieTntSection = new ZombieTntSection();
