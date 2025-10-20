@@ -16,10 +16,6 @@ public class VetheroacConfig extends Config {
         super(Identifier.of(MOD_ID, "vetheroac"));
     }
 
-    @Comment("If it trys and bugfixes on join (not needed cus exploding 1 tnt does the same thing)")
-    @Name("Bugfix On Join")
-    public boolean Do_Bugfix_At_Join = true;
-
     public BaseTntSection BaseTntSection = new BaseTntSection();
 
 
@@ -98,6 +94,9 @@ public class VetheroacConfig extends Config {
         public ValidatedInt Amount = new ValidatedInt(15, 100, 0);
     }
 
+    @Comment("If it trys and bugfixes on join (not needed cus exploding 1 tnt does the same thing)")
+    @Name("Bugfix On Join")
+    public boolean Do_Bugfix_At_Join = true;
 
     @Override
     public int defaultPermLevel() {
