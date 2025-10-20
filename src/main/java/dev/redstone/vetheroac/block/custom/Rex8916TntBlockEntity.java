@@ -54,8 +54,6 @@ public class Rex8916TntBlockEntity extends BlockEntity {
             double vz = (world.random.nextDouble() - 0.5) * 0.8;
 
             entity.setVelocity(vx, vy, vz);
-            entity.setCustomName(Text.literal("Rex8916"));
-            entity.setCustomNameVisible(true);
             world.spawnEntity(entity);
 
         }

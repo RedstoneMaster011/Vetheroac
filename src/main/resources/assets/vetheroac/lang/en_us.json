@@ -1,5 +1,5 @@
 {
- "block.vetheroac.op_tnt": "Powerful TNT",
+ "block.vetheroac.powerful_tnt": "Powerful TNT",
  "block.vetheroac.split_tnt": "Split TNT",
  "block.vetheroac.paint_tnt": "Paint TNT",
  "block.vetheroac.cube_destroyer": "Cube Destroyer",
@@ -16,5 +16,6 @@
  "block.vetheroac.5x_tnt": "5x TNT",
  "block.vetheroac.xray_tnt": "Xray TNT",
   "item.vetheroac.tnt_launcher": "Tnt Launcher",
-  "item.vetheroac.clear_physics_entities": "Clear Entities"
+  "item.vetheroac.clear_physics_entities": "Clear Entities",
+  "entity.vetheroac.rex8916": "Rex8916"
 }
