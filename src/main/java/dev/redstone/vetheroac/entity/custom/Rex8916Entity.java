@@ -22,7 +22,7 @@ public class Rex8916Entity extends PathAwareEntity {
         return PathAwareEntity.createMobAttributes()
                 .add(EntityAttributes.GENERIC_MAX_HEALTH, 20.0)
                 .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.25)
-                .add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 4.0);
+                .add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 1.0);
     }
 
     @Override
