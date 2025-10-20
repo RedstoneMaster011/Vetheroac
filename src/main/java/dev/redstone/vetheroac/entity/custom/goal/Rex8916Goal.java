@@ -29,7 +29,7 @@ public class Rex8916Goal extends Goal {
             return true;
         }
 
-        if (random.nextInt(200) == 0) {
+        if (random.nextInt(500) == 0) {
             List<PlayerEntity> players = mob.getWorld().getEntitiesByClass(PlayerEntity.class, new Box(mob.getBlockPos()).expand(8.0), LivingEntity::isAlive);
             if (!players.isEmpty()) {
                 attacker = players.get(0);
