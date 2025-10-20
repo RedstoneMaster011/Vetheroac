@@ -22,7 +22,7 @@ public class PlayerJoinMixin {
 
         if (server != null) {
 
-            String command = String.format("/tellraw %s \"[Vetheroac] Hello there, Vetheroac here, please wait until the bugfix initializer has ran before exploding anything unless you want to get bugs\"", player.getEntityName());
+            String command = String.format("/tellraw %s \"[Vetheroac] Hello there, Vetheroac here, please wait until the bugfix initializer has ran before exploding anything unless you want to get bugs, but, even after this the first 1 or 2 explosions may still be buggy, this mod is still in alpha and so is the api\"", player.getEntityName());
             ServerCommandSource source = server.getCommandSource();
             CommandManager commandManager = server.getCommandManager();
             commandManager.executeWithPrefix(source, command);
