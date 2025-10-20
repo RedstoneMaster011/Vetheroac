@@ -30,6 +30,10 @@ public class WorldStartsUpMixin {
 
         if (overworld != null) {
             server.getCommandManager().executeWithPrefix(server.getCommandSource(), "/summon minecraft:tnt 0 0 0");
+            server.getCommandManager().executeWithPrefix(server.getCommandSource(), "/vxsummon velthoric:box 0 0 0");
+            server.getCommandManager().executeWithPrefix(server.getCommandSource(), "/vxsummon velthoric:box 0 -1 0");
+            server.getCommandManager().executeWithPrefix(server.getCommandSource(), "/vxsummon velthoric:box 0 -2 0");
+            server.getCommandManager().executeWithPrefix(server.getCommandSource(), "/vxsummon velthoric:box 0 -3 0");
 
             ticksUntilKill = 500;
             delayedServer = server;
