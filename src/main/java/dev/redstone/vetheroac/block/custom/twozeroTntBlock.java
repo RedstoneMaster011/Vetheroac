@@ -112,6 +112,7 @@ public class twozeroTntBlock extends BlockWithEntity {
     @Override
     public void appendTooltip(ItemStack stack, @Nullable BlockView world, List<Text> tooltip, TooltipContext options) {
         tooltip.add(Text.of("§c§lUse a flint and steel or power with redstone to light"));
+        tooltip.add(Text.of("§4§lWARNING: this tnt is quite powerful, please be careful"));
         super.appendTooltip(stack, world, tooltip, options);
     }
 

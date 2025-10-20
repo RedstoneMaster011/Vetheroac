@@ -5,6 +5,8 @@ import dev.redstone.vetheroac.config.VetheroacConfigs;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.TntEntity;
+import net.minecraft.server.MinecraftServer;
+import net.minecraft.server.command.ServerCommandSource;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
@@ -34,6 +36,13 @@ public class twozeroTntBlockEntity extends BlockEntity {
 
     private void explode(World world, BlockPos pos) {
         world.removeBlock(pos, false);
+
+        MinecraftServer server = world.getServer();
+        assert server != null;
+        ServerCommandSource source = server.getCommandSource();
+        String command = "/tellraw @a \"[Vetheroac] §l§cWARNING: The TNT '20x TNT' has been lit, the server may lag quite a bit until it has finished and low fps after\"";
+        server.getCommandManager().executeWithPrefix(source, command);
+
         for (int x = 0; x < 10; x++) {
             for (int y = 0; y < 10; y++) {
                 for (int z = 0; z < 10; z++) {
