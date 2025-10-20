@@ -1,5 +1,6 @@
 package dev.redstone.vetheroac.mixin;
 
+import dev.redstone.vetheroac.config.VetheroacConfig;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.world.ServerWorld;
@@ -22,6 +23,10 @@ public class WorldStartsUpMixin {
     private void onWorldLoad(CallbackInfo ci) {
         MinecraftServer server = (MinecraftServer)(Object)this;
         ServerWorld overworld = server.getWorld(World.OVERWORLD);
+
+        VetheroacConfig config = new VetheroacConfig();
+
+        if (config.Do_Bugfix_At_Join == false) return;
 
         if (overworld != null) {
             server.getCommandManager().executeWithPrefix(server.getCommandSource(), "/summon minecraft:tnt 0 0 0");

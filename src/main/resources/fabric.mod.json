@@ -24,11 +24,16 @@
     "vetheroac.mixins.json"
   ],
   "depends": {
+    "fzzy_config": "*",
+    "modmenu": "*",
     "architectury": "*",
     "fabric-api": "*",
     "velthoric": "*",
     "fabricloader": ">=${loader_version}",
     "fabric": "*",
     "minecraft": "${minecraft_version}"
+  },
+  "custom": {
+    "fzzy_config": ["vetheroac"]
   }
 }

@@ -46,5 +46,10 @@
       <option name="name" value="maven" />
       <option name="url" value="https://api.modrinth.com/maven" />
     </remote-repository>
+    <remote-repository>
+      <option name="id" value="FzzyMaven" />
+      <option name="name" value="FzzyMaven" />
+      <option name="url" value="https://maven.fzzyhmstrs.me/" />
+    </remote-repository>
   </component>
 </project>

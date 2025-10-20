@@ -22,6 +22,7 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+import dev.redstone.vetheroac.config.VetheroacConfigs;
 
 @Mixin(TntEntity.class)
 public class ServerWorldMixin {
@@ -32,6 +33,9 @@ public class ServerWorldMixin {
         ServerWorld world = (ServerWorld) self.getWorld();
         MinecraftServer server = world.getServer();
         BlockPos origin = self.getBlockPos();
+
+
+        if (!VetheroacConfigs.VetheroacConfig.Physic_Based_TNT) return;
 
         for (BlockPos pos : BlockPos.iterateOutwards(origin, 2, 2, 2)) {
             BlockState state = world.getBlockState(pos);
@@ -58,12 +62,16 @@ public class ServerWorldMixin {
                     EActivation.Activate,
                     b -> b.setRepresentedBlockState(originalState != null ? originalState : Blocks.STONE.getDefaultState())
             );
+
+
+
         }
+
         server.submit(() -> {
             server.submit(() -> {
                 server.submit(() -> {
                     server.submit(() -> {
-                        for (int i = 0; i < 5; i++) {
+                        for (int i = 0; i < VetheroacConfigs.VetheroacConfig.PowerTNT.get(); i++) {
                             Vec3d spawnPos = Vec3d.ofCenter(origin).add(0, -2, 0);
 
                             ServerWorld serverWorld = world;

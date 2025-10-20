@@ -8,6 +8,7 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+import dev.redstone.vetheroac.config.VetheroacConfigs;
 
 @Mixin(ServerPlayerEntity.class)
 public class PlayerJoinMixin {
@@ -16,6 +17,8 @@ public class PlayerJoinMixin {
     private void onPlayerJoin(CallbackInfo ci) {
         ServerPlayerEntity player = (ServerPlayerEntity)(Object)this;
         MinecraftServer server = player.getServer();
+
+        if (VetheroacConfigs.VetheroacConfig.Do_Bugfix_At_Join == false) return;
 
         if (server != null) {
 
