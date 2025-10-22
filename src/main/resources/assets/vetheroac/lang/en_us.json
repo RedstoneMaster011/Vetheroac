@@ -4,6 +4,7 @@
  "block.vetheroac.paint_tnt": "Paint TNT",
  "block.vetheroac.cube_destroyer": "Cube Destroyer",
  "block.vetheroac.rex8916_tnt": "Rex8916 TNT",
+ "block.vetheroac.warriar_tnt": "WARARIAR TNT",
  "block.vetheroac.rain_tnt": "Rain TNT",
  "block.vetheroac.chunk_tnt": "Chunk TNT",
  "block.vetheroac.lucky_tnt": "Lucky TNT",
@@ -17,5 +18,6 @@
  "block.vetheroac.xray_tnt": "Xray TNT",
   "item.vetheroac.tnt_launcher": "Tnt Launcher",
   "item.vetheroac.clear_physics_entities": "Clear Entities",
-  "entity.vetheroac.rex8916": "Rex8916"
+  "entity.vetheroac.rex8916": "Rex8916",
+  "entity.vetheroac.warriar": "WARRIAR"
 }

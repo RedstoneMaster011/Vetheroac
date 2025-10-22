@@ -23,6 +23,7 @@ public class VetheroacBlockEntities {
     public static BlockEntityType<onezeroTntBlockEntity>  ONEZERO_TNT_BLOCK_ENTITY;
     public static BlockEntityType<fiveTntBlockEntity>  FIVE_TNT_BLOCK_ENTITY;
     public static BlockEntityType<XrayTntBlockEntity>  XRAY_TNT_BLOCK_ENTITY;
+    public static BlockEntityType<WARRIARTntBlockEntity>  WARRIAR_TNT_BLOCK_ENTITY;
 
     public static void register() {
         POWERFUL_TNT_BLOCK_ENTITY = Registry.register(
@@ -119,6 +120,12 @@ public class VetheroacBlockEntities {
                 Registries.BLOCK_ENTITY_TYPE,
                 new Identifier("vetheroac", "xray_tnt_block_entity"),
                 BlockEntityType.Builder.create(XrayTntBlockEntity::new, VetheroacBlocks.Xray_Tnt_Block).build(null)
+        );
+
+        WARRIAR_TNT_BLOCK_ENTITY = Registry.register(
+                Registries.BLOCK_ENTITY_TYPE,
+                new Identifier("vetheroac", "warriar_tnt_block_entity"),
+                BlockEntityType.Builder.create(WARRIARTntBlockEntity::new, VetheroacBlocks.WARRIAR_Tnt_Block).build(null)
         );
     }
 }

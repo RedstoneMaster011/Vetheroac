@@ -31,6 +31,7 @@ public class ModelLibrary extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(VetheroacBlocks.onezero_Tnt_Block);
         blockStateModelGenerator.registerSimpleCubeAll(VetheroacBlocks.five_Tnt_Block);
         blockStateModelGenerator.registerSimpleCubeAll(VetheroacBlocks.Xray_Tnt_Block);
+        blockStateModelGenerator.registerSimpleCubeAll(VetheroacBlocks.WARRIAR_Tnt_Block);
 
     }
 

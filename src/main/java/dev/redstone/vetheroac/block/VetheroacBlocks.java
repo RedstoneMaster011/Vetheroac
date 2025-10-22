@@ -29,6 +29,7 @@ public class VetheroacBlocks {
     public static final Block onezero_Tnt_Block = RegisterBlock("10x_tnt", new onezeroTntBlock(FabricBlockSettings.copyOf(Blocks.TNT)));
     public static final Block five_Tnt_Block = RegisterBlock("5x_tnt", new fiveTntBlock(FabricBlockSettings.copyOf(Blocks.TNT)));
     public static final Block Xray_Tnt_Block = RegisterBlock("xray_tnt", new XrayTntBlock(FabricBlockSettings.copyOf(Blocks.TNT)));
+    public static final Block WARRIAR_Tnt_Block = RegisterBlock("warriar_tnt", new WARRIARTntBlock(FabricBlockSettings.copyOf(Blocks.TNT)));
 
     private static Block RegisterBlock(String name, Block block) {
         RegisterItem(name, block);
