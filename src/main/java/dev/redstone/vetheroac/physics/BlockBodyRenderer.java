@@ -1,3 +1,8 @@
+/*
+ * This file is part of Velthoric.
+ * Licensed under LGPL 3.0.
+ */
+
 package dev.redstone.vetheroac.physics;
 
 import com.github.stephengold.joltjni.Quat;
