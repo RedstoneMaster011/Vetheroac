@@ -1,5 +1,7 @@
 package dev.redstone.vetheroac.entity.custom.goal;
 
+import dev.redstone.vetheroac.entity.custom.Rex8916Entity;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.ai.goal.Goal;
 import net.minecraft.entity.mob.PathAwareEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -8,12 +10,13 @@ import net.minecraft.util.math.Box;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 
+import java.util.Comparator;
 import java.util.List;
 
 public class WARRIARGoal extends Goal {
     private final PathAwareEntity mob;
     private final double speed;
-    private PlayerEntity target;
+    private Entity target;
 
     public WARRIARGoal(PathAwareEntity mob, double speed) {
         this.mob = mob;
@@ -22,10 +25,14 @@ public class WARRIARGoal extends Goal {
 
     @Override
     public boolean canStart() {
-        List<PlayerEntity> players = mob.getWorld().getEntitiesByClass(PlayerEntity.class, new Box(mob.getBlockPos()).expand(16.0), PlayerEntity::isAlive);
-        if (!players.isEmpty()) {
-            target = players.stream().min((a, b) -> Double.compare(mob.squaredDistanceTo(a), mob.squaredDistanceTo(b))).orElse(null);
-        }
+        List<Entity> candidates = mob.getWorld().getEntitiesByClass(Entity.class,
+                new Box(mob.getBlockPos()).expand(16.0),
+                e -> e.isAlive() && (e instanceof PlayerEntity || e instanceof Rex8916Entity) && e != mob);
+
+        target = candidates.stream()
+                .min(Comparator.comparingDouble(mob::squaredDistanceTo))
+                .orElse(null);
+
         return target != null;
     }
 
@@ -36,22 +43,37 @@ public class WARRIARGoal extends Goal {
 
     @Override
     public void tick() {
-        if (target == null || !target.isAlive()) return;
+        if (!mob.isAlive()) return;
 
-        mob.getNavigation().startMovingTo(target, speed);
+        List<Entity> candidates = mob.getWorld().getEntitiesByClass(Entity.class,
+                new Box(mob.getBlockPos()).expand(16.0),
+                e -> e.isAlive() && (e instanceof PlayerEntity || e instanceof Rex8916Entity) && e != mob);
 
-        if (mob.squaredDistanceTo(target) <= 1.5 * 1.5) {
-            World world = mob.getWorld();
-            Vec3d pos = mob.getPos();
-            for (int i = 0; i < 3; i++) {
-                double x = (i - 1) * 0.5;
-                double y = 0;
-                double z = (i % 2 == 0 ? -0.5 : 0.5);
-                TntEntity tnt = new TntEntity(world, pos.getX() + 0.5 + x, pos.getY() + y - 5, pos.getZ() + 0.5 + z, null);
-                tnt.setFuse(1);
-                world.spawnEntity(tnt);
+        Entity closest = candidates.stream()
+                .min(Comparator.comparingDouble(mob::squaredDistanceTo))
+                .orElse(null);
+
+        if (closest != null && closest != target) {
+            target = closest;
+            mob.getNavigation().startMovingTo(target, speed);
+        }
+
+        if (target != null && target.isAlive()) {
+            mob.getNavigation().startMovingTo(target, speed);
+
+            if (mob.squaredDistanceTo(target) <= 1.5 * 1.5) {
+                World world = mob.getWorld();
+                Vec3d pos = mob.getPos();
+                for (int i = 0; i < 3; i++) {
+                    double x = (i - 1) * 0.5;
+                    double y = 0;
+                    double z = (i % 2 == 0 ? -0.5 : 0.5);
+                    TntEntity tnt = new TntEntity(world, pos.getX() + 0.5 + x, pos.getY() + y - 5, pos.getZ() + 0.5 + z, null);
+                    tnt.setFuse(1);
+                    world.spawnEntity(tnt);
+                }
+                mob.discard();
             }
-            mob.discard();
         }
     }
 
