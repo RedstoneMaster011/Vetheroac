@@ -5,8 +5,7 @@
   "compatibilityLevel": "JAVA_17",
   "mixins": [
     "PlayerJoinMixin",
-    "ServerWorldMixin",
-    "WorldStartsUpMixin"
+    "ServerWorldMixin"
   ],
   "client": [
   ],
