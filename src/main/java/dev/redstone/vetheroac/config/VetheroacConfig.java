@@ -75,7 +75,7 @@ public class VetheroacConfig extends Config {
     public static class WARRIARTntSection extends ConfigSection {
         @Comment("Amount Of WARRIAR Entities To Spawn")
         @Name("Amount To Spawn: default: 15")
-        public ValidatedInt Amount = new ValidatedInt(15, 100, 0);
+        public ValidatedInt Amount = new ValidatedInt(1, 100, 0);
     }
 
     public DayTntSection DayTntSection = new DayTntSection();

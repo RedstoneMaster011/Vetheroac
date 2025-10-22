@@ -124,3 +124,859 @@
 [20:26:05] [main/WARN] (FabricLoader/Mixin) Error loading class: me/jellysquid/mods/sodium/client/gui/SodiumGameOptionPages (java.lang.ClassNotFoundException: me/jellysquid/mods/sodium/client/gui/SodiumGameOptionPages)
 [20:26:05] [main/WARN] (FabricLoader/Mixin) Error loading class: net/caffeinemc/sodium/config/user/UserConfigCategories (java.lang.ClassNotFoundException: net/caffeinemc/sodium/config/user/UserConfigCategories)
 [20:26:07] [main/INFO] (EssentialLoaderBase) Starting Essential Loader (stage2) version 1.6.6 (64b13bbd248a9bb10a3dc68389eacdcc) [stable]
+[20:26:08] [main/INFO] (Essential Logger - Plugin) Starting Essential v1.3.9.2 (#a263b344a3) [stable]
+[20:26:08] [main/INFO] (Essential Logger - Plugin) Java: OpenJDK 64-Bit Server VM (v23-valhalla) by Oracle Corporation (Oracle Corporation)
+[20:26:08] [main/INFO] (Essential Logger - Plugin) Java Path: C:\Users\Lucas\.jdks\valhalla-ea-23-valhalla+1-90\bin
+[20:26:08] [main/INFO] (Essential Logger - Plugin) Java Info: mixed mode, sharing
+[20:26:08] [main/INFO] (Essential Logger - Plugin) JVM Arguments: 
+  - -Xmx8G
+  - -Xms4G
+  - -Ddebugger.agent.enable.coroutines=true
+  - -Dfabric.dli.config=C:\Users\Lucas\Desktop\ModdingFiles\Vetheroac\.gradle\loom-cache\launch.cfg
+  - -Dfabric.dli.env=client
+  - -Dfabric.dli.main=net.fabricmc.loader.impl.launch.knot.KnotClient
+  - -Dkotlinx.coroutines.debug.enable.creation.stack.trace=false
+  - -Dkotlinx.coroutines.debug.enable.flows.stack.trace=true
+  - -Dkotlinx.coroutines.debug.enable.mutable.state.flows.stack.trace=true
+  - -agentlib:jdwp=transport=dt_socket,server=n,suspend=y,address=127.0.0.1:53155
+  - -javaagent:C:\Users\Lucas\AppData\Local\JetBrains\IdeaIC2025.2\captureAgent\debugger-agent.jar=file:///C:/Users/Lucas/AppData/Local/Temp/capture2371067934674903612.props
+  - -Dfile.encoding=UTF-8
+  - -Duser.country=US
+  - -Duser.language=en
+  - -Duser.variant
+[20:26:08] [main/INFO] (Essential Logger - Plugin) OS: Windows 11 (v10.0) (Arch: amd64)
+[20:26:09] [main/INFO] (FabricLoader/MixinExtras|Service) Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.0).
+[20:26:14] [Datafixer Bootstrap/INFO] (Minecraft) 188 Datafixer optimizations took 162 milliseconds
+[20:26:16] [Render thread/INFO] (Minecraft) [STDERR]: [LWJGL] [ThreadLocalUtil] Unsupported JNI version detected, this may result in a crash. Please inform LWJGL developers.
+[20:26:17] [Render thread/INFO] (Minecraft) Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[20:26:17] [Render thread/ERROR] (Minecraft) Failed to verify authentication
+com.mojang.authlib.exceptions.InvalidCredentialsException: Status: 401
+	at com.mojang.authlib.exceptions.MinecraftClientHttpException.toAuthenticationException(MinecraftClientHttpException.java:56) ~[authlib-4.0.43.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilUserApiService.fetchProperties(YggdrasilUserApiService.java:156) ~[authlib-4.0.43.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilUserApiService.<init>(YggdrasilUserApiService.java:55) ~[authlib-4.0.43.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.createUserApiService(YggdrasilAuthenticationService.java:124) ~[authlib-4.0.43.jar:?]
+	at net.minecraft.client.MinecraftClient.createUserApiService(MinecraftClient.java:733) ~[minecraft-merged-bf575f6df2-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+	at net.minecraft.client.MinecraftClient.<init>(MinecraftClient.java:442) ~[minecraft-merged-bf575f6df2-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+	at net.minecraft.client.main.Main.main(Main.java:211) ~[minecraft-merged-bf575f6df2-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:506) ~[fabric-loader-0.17.3.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:72) ~[fabric-loader-0.17.3.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23) ~[fabric-loader-0.17.3.jar:?]
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) ~[dev-launch-injector-0.2.1+build.8.jar:?]
+Caused by: com.mojang.authlib.exceptions.MinecraftClientHttpException: Status: 401
+	at com.mojang.authlib.minecraft.client.MinecraftClient.readInputStream(MinecraftClient.java:85) ~[authlib-4.0.43.jar:?]
+	at com.mojang.authlib.minecraft.client.MinecraftClient.get(MinecraftClient.java:48) ~[authlib-4.0.43.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilUserApiService.fetchProperties(YggdrasilUserApiService.java:129) ~[authlib-4.0.43.jar:?]
+	... 9 more
+[20:26:17] [Render thread/INFO] (Minecraft) Setting user: Player930
+[20:26:18] [Render thread/INFO] (Essential - DI) Starting DI!
+[20:26:18] [Render thread/INFO] (Essential - Connection) Authenticating to Mojang as Player930 (eac293da-7d7d-3c6a-94e5-fba80de0212f)
+[20:26:18] [Essential Thread 8/WARN] (FabricLoader/Mixin) Error loading class: net/optifine/reflect/Reflector (java.lang.ClassNotFoundException: net/optifine/reflect/Reflector)
+[20:26:18] [Essential Thread 8/WARN] (FabricLoader/Mixin) Error loading class: net/optifine/reflect/Reflector (java.lang.ClassNotFoundException: net/optifine/reflect/Reflector)
+[20:26:18] [DefaultDispatcher-worker-3/INFO] (Essential - Connection) Session token appears to be invalid, trying to automatically refresh it
+[20:26:19] [Render thread/INFO] (Minecraft) [STDOUT]: Registering Modded
+[20:26:20] [Render thread/WARN] (fzzy_config) >>>>>>>>>>>>>>>
+[20:26:20] [Render thread/WARN] (fzzy_config) Error(s) found while deserializing config [vetheroac]!
+[20:26:20] [Render thread/WARN] (fzzy_config)   Deserialization Error: TomlElement [WARRIARTntSection] was missing or null.
+[20:26:20] [Render thread/WARN] (fzzy_config) >>>>>>>>>>>>>>>
+[20:26:20] [Render thread/INFO] (fzzy_config) Loaded config vetheroac:vetheroac in 552ms
+[20:26:20] [Render thread/ERROR] (Minecraft) No data fixer registered for rex8916
+[20:26:20] [Render thread/ERROR] (Minecraft) No data fixer registered for warriar
+[20:26:20] [Render thread/ERROR] (Minecraft) No data fixer registered for mounting_entity
+[20:26:20] [Render thread/INFO] (NetworkManagerImpl) Registering C2S receiver with id velthoric:main_channel/31b88d8fee3b3682a7a236d9ae362b2b
+[20:26:20] [Render thread/INFO] (NetworkManagerImpl) Registering S2C receiver with id velthoric:main_channel/31b88d8fee3b3682a7a236d9ae362b2b
+[20:26:20] [Render thread/INFO] (NetworkManagerImpl) Registering C2S receiver with id velthoric:main_channel/dde5cff6fe983764b89e409564e4571c
+[20:26:20] [Render thread/INFO] (NetworkManagerImpl) Registering S2C receiver with id velthoric:main_channel/dde5cff6fe983764b89e409564e4571c
+[20:26:20] [Render thread/INFO] (NetworkManagerImpl) Registering C2S receiver with id velthoric:main_channel/64646559d7ed3d78b1ef082ea7082d34
+[20:26:20] [Render thread/INFO] (NetworkManagerImpl) Registering S2C receiver with id velthoric:main_channel/64646559d7ed3d78b1ef082ea7082d34
+[20:26:20] [Render thread/INFO] (NetworkManagerImpl) Registering C2S receiver with id velthoric:main_channel/33746189d14933dfba41e012efb94fc7
+[20:26:20] [Render thread/INFO] (NetworkManagerImpl) Registering S2C receiver with id velthoric:main_channel/33746189d14933dfba41e012efb94fc7
+[20:26:20] [Render thread/INFO] (NetworkManagerImpl) Registering C2S receiver with id velthoric:main_channel/8324ff51806a3d33a7ed4194562bb48f
+[20:26:20] [Render thread/INFO] (NetworkManagerImpl) Registering S2C receiver with id velthoric:main_channel/8324ff51806a3d33a7ed4194562bb48f
+[20:26:20] [Render thread/INFO] (NetworkManagerImpl) Registering C2S receiver with id velthoric:main_channel/e9706c1d1c4c39bf989f63ee04798542
+[20:26:20] [Render thread/INFO] (NetworkManagerImpl) Registering S2C receiver with id velthoric:main_channel/e9706c1d1c4c39bf989f63ee04798542
+[20:26:20] [Render thread/INFO] (NetworkManagerImpl) Registering C2S receiver with id velthoric:main_channel/e8783aba49e13aa9973a607a2387a9de
+[20:26:20] [Render thread/INFO] (NetworkManagerImpl) Registering S2C receiver with id velthoric:main_channel/e8783aba49e13aa9973a607a2387a9de
+[20:26:20] [Render thread/INFO] (NetworkManagerImpl) Registering C2S receiver with id velthoric:main_channel/a3f2d31d6b663a43be7e04d31caa1389
+[20:26:20] [Render thread/INFO] (NetworkManagerImpl) Registering S2C receiver with id velthoric:main_channel/a3f2d31d6b663a43be7e04d31caa1389
+[20:26:20] [Render thread/INFO] (NetworkManagerImpl) Registering C2S receiver with id velthoric:main_channel/01fac1980a72345e9ff652bccb7c4f7c
+[20:26:20] [Render thread/INFO] (NetworkManagerImpl) Registering S2C receiver with id velthoric:main_channel/01fac1980a72345e9ff652bccb7c4f7c
+[20:26:20] [Render thread/INFO] (NetworkManagerImpl) Registering C2S receiver with id velthoric:main_channel/efa7cb954c64308ba3238f97b26b7aff
+[20:26:20] [Render thread/INFO] (NetworkManagerImpl) Registering S2C receiver with id velthoric:main_channel/efa7cb954c64308ba3238f97b26b7aff
+[20:26:20] [Render thread/INFO] (NetworkManagerImpl) Registering C2S receiver with id velthoric:main_channel/d4576ae1cf553ab4924b55dc4635c80c
+[20:26:20] [Render thread/INFO] (NetworkManagerImpl) Registering S2C receiver with id velthoric:main_channel/d4576ae1cf553ab4924b55dc4635c80c
+[20:26:20] [Render thread/INFO] (NetworkManagerImpl) Registering C2S receiver with id velthoric:main_channel/7fa5a55de52b3c4eaacd9e9d91b3c5c9
+[20:26:20] [Render thread/INFO] (NetworkManagerImpl) Registering S2C receiver with id velthoric:main_channel/7fa5a55de52b3c4eaacd9e9d91b3c5c9
+[20:26:20] [Render thread/INFO] (NetworkManagerImpl) Registering C2S receiver with id velthoric:main_channel/4a3dae75b77431f598d870186a1ec2c7
+[20:26:20] [Render thread/INFO] (NetworkManagerImpl) Registering S2C receiver with id velthoric:main_channel/4a3dae75b77431f598d870186a1ec2c7
+[20:26:20] [Render thread/INFO] (fzzy_config) Loaded config fzzy_config:keybinds in 43ms
+[20:26:20] [Render thread/INFO] (Indigo) [Indigo] Registering Indigo renderer!
+[20:26:21] [Render thread/INFO] (NetworkManagerImpl) Registering S2C receiver with id architectury:spawn_entity_packet
+[20:26:21] [Worker-Main-1/INFO] (Mod Menu/Update Checker) Checking mod updates...
+[20:26:21] [Render thread/INFO] (Essential Logger) OptiFine not detected.
+[20:26:22] [Render thread/INFO] (Minecraft) Backend library: LWJGL version 3.3.2-snapshot
+[20:26:23] [Render thread/ERROR] (Essential Logger) Failed to refresh session: Unknown account
+[20:26:23] [Render thread/INFO] (Essential - Connection) Failed to authenticate to Mojang, waiting for new user-supplied session token
+[20:26:24] [Render thread/INFO] (Minecraft) Reloading ResourceManager: vanilla, fabric (fabric-game-rule-api-v1, fabric-transitive-access-wideners-v1, fzzy_config, fabric-language-kotlin, fabric-events-interaction-v0, fabric-block-api-v1, c2me, fabric-command-api-v2, fabric-events-lifecycle-v0, fabric-resource-conditions-api-v1, fabric-api, fabric-api-base, fabric-crash-report-info-v1, fabric-resource-loader-v0, fabric-message-api-v1, fabric-biome-api-v1, fabric-data-generation-api-v1, vetheroac, fabric-registry-sync-v0, fabric-networking-v0, chunky, essential-container, fabric-convention-tags-v1, fabric-transfer-api-v1, fabric-rendering-fluids-v1, fabric-model-loading-api-v1, fabric-gametest-api-v1, fabric-renderer-registries-v1, fabric-loot-tables-v1, fabric-renderer-indigo, fabric-screen-api-v1, fabric-particles-v1, fabric-keybindings-v0, fabric-commands-v0, fabric-dimensions-v1, fabric-entity-events-v1, fabricloader, fabric-models-v0, fabric-block-view-api-v2, fabric-command-api-v1, fabric-blockrenderlayer-v1, fabric-containers-v0, fabric-item-api-v1, fabric-api-lookup-api-v1, essential-loader, fabric-item-group-api-v1, fabric-rendering-data-attachment-v1, fabric-rendering-v0, fabric-lifecycle-events-v1, fabric-mining-level-api-v1, fabric-loot-api-v2, fabric-screen-handler-api-v1, fabric-rendering-v1, velthoric, fabric-data-attachment-api-v1, fabric-networking-api-v1, fabric-key-binding-api-v1, fabric-renderer-api-v1, fabric-sound-api-v1, modmenu, fabric-object-builder-api-v1, fabric-recipe-api-v1, fabric-content-registries-v0, fabric-client-tags-api-v1, essential), Essential Assets, essential
+[20:26:24] [Worker-Main-4/INFO] (Minecraft) Found unifont_all_no_pua-15.0.06.hex, loading
+[20:26:24] [Realms Notification Availability checker #1/INFO] (Minecraft) Could not authorize you against Realms server: java.lang.RuntimeException: Failed to parse into SignedJWT: FabricMC
+[20:26:24] [Worker-Main-3/WARN] (Minecraft) Texture vetheroac:block/warriar_tnt with size 8x8 limits mip level from 4 to 3
+[20:26:24] [Worker-Main-3/WARN] (Minecraft) minecraft:textures/atlas/blocks.png: dropping miplevel from 4 to 3, because of minimum power of two: 8
+[20:26:26] [Render thread/WARN] (Minecraft) Missing sound for event: minecraft:item.goat_horn.play
+[20:26:26] [Render thread/WARN] (Minecraft) Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[20:26:26] [Render thread/INFO] (Minecraft) OpenAL initialized on device OpenAL Soft on Headphones (Realtek(R) Audio)
+[20:26:26] [Render thread/INFO] (Minecraft) Sound engine started
+[20:26:26] [Render thread/INFO] (Minecraft) Created: 1024x512x3 minecraft:textures/atlas/blocks.png-atlas
+[20:26:26] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
+[20:26:26] [Render thread/INFO] (Minecraft) Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[20:26:26] [Render thread/INFO] (Minecraft) Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[20:26:26] [Render thread/INFO] (Minecraft) Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
+[20:26:26] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[20:26:26] [Render thread/INFO] (Minecraft) Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
+[20:26:26] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[20:26:26] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[20:26:27] [Render thread/WARN] (Minecraft) Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
+[20:26:27] [Render thread/INFO] (Minecraft) Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
+[20:26:27] [Render thread/INFO] (Minecraft) Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
+[20:26:27] [Render thread/INFO] (Minecraft) Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[20:26:30] [Render thread/WARN] (Minecraft) Shader cabb2374eda405e66b897908637abd1da5deac52 could not find uniform named subpixel_amount in the specified shader program.
+[20:26:42] [Render thread/INFO] (Minecraft) Loaded 7 recipes
+[20:26:42] [Render thread/INFO] (Minecraft) Loaded 1271 advancements
+[20:26:43] [Render thread/INFO] (BiomeModificationImpl) Applied 0 biome modifications to 0 of 64 new biomes in 1.831 ms
+[20:26:43] [Server thread/INFO] (Velthoric) Initialized Velthoric Persistence Manager with 4 I/O threads.
+[20:26:43] [Server thread/INFO] (Minecraft) Starting integrated minecraft server version 1.20.1
+[20:26:43] [Server thread/INFO] (Minecraft) Generating keypair
+[20:26:43] [Server thread/INFO] (CheckedThreadLocalRandom) Enforcing safe world random access
+[20:26:45] [Server thread/INFO] (Minecraft) Preparing start region for dimension minecraft:overworld
+[20:26:45] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[20:26:45] [Render thread/INFO] (Minecraft) Preparing spawn area: 2%
+[20:26:46] [Render thread/INFO] (Minecraft) Preparing spawn area: 54%
+[20:26:46] [Render thread/INFO] (Minecraft) Time elapsed: 1391 ms
+[20:26:46] [Server thread/INFO] (Minecraft) Summoned new Primed TNT
+[20:26:46] [Server thread/INFO] (Minecraft) Successfully summoned physics body 'velthoric:box' with ID: 8ac23a77-0292-4038-9a32-5eb51d2b898d
+[20:26:46] [Server thread/INFO] (Minecraft) Successfully summoned physics body 'velthoric:box' with ID: cdfde5ff-1e89-4d80-ad0f-a95735858ae4
+[20:26:46] [Server thread/INFO] (Minecraft) Successfully summoned physics body 'velthoric:box' with ID: 2c307baf-4c38-472e-9719-df27aee1c923
+[20:26:46] [Server thread/INFO] (Minecraft) Successfully summoned physics body 'velthoric:box' with ID: 4bbcdd11-4272-49b2-8716-26d70d1434a5
+[20:26:46] [Server thread/INFO] (Minecraft) Changing view distance to 12, from 10
+[20:26:46] [Server thread/INFO] (Minecraft) Changing simulation distance to 5, from 0
+[20:26:47] [Server thread/INFO] (Minecraft) Player930[local:E:970d275e] logged in with entity id 203 at (-29.3256055910513, 128.64131642924366, -12.987959353222855)
+[20:26:47] [Server thread/INFO] (Minecraft) Player930 joined the game
+[20:26:48] [Render thread/INFO] (Minecraft) [System] [CHAT] [Vetheroac] Hello there, Vetheroac here, please wait until the bugfix initializer has ran before exploding anything unless you want to get bugs, but, even after this the first 1 or 2 explosions may still be buggy, this mod is still in alpha and so is the api
+[20:26:48] [Server thread/INFO] (Minecraft) [@: Applied effect Regeneration to Player930]
+[20:26:48] [Render thread/INFO] (Minecraft) [System] [CHAT] [@: Applied effect Regeneration to Player930]
+[20:26:48] [Render thread/INFO] (Minecraft) Loaded 2 advancements
+[20:26:49] [Server thread/INFO] (Minecraft) Saving and pausing game...
+[20:26:49] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[20:26:51] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[20:26:51] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[20:26:51] [Server thread/INFO] (Minecraft) Player930 lost connection: Disconnected
+[20:26:51] [Server thread/INFO] (Minecraft) Player930 left the game
+[20:26:51] [Server thread/INFO] (Minecraft) Stopping singleplayer server as player logged out
+[20:26:51] [Server thread/INFO] (Minecraft) Stopping server
+[20:26:51] [Server thread/INFO] (Minecraft) Saving players
+[20:26:51] [Server thread/INFO] (Minecraft) Saving worlds
+[20:26:52] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[20:26:52] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[20:26:52] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[20:26:52] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (New World): All chunks are saved
+[20:26:52] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[20:26:52] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[20:26:52] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+[20:26:52] [C2ME Storage #6/INFO] (C2ME Storage) Storage thread Thread[#151,C2ME Storage #6,8,main] stopped
+[20:26:52] [C2ME Storage #9/INFO] (C2ME Storage) Storage thread Thread[#154,C2ME Storage #9,8,main] stopped
+[20:26:54] [Render thread/INFO] (Minecraft) Deleting level New World
+[20:26:54] [Render thread/INFO] (Minecraft) Attempt 1...
+[20:26:54] [Render thread/WARN] (Minecraft) Failed to delete C:\Users\Lucas\Desktop\ModdingFiles\Vetheroac\run\saves\New World
+java.nio.file.FileSystemException: C:\Users\Lucas\Desktop\ModdingFiles\Vetheroac\run\saves\New World\region\r.0.0.mca: The process cannot access the file because it is being used by another process
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92) ~[?:?]
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103) ~[?:?]
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108) ~[?:?]
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:273) ~[?:?]
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:105) ~[?:?]
+	at java.nio.file.Files.delete(Files.java:1153) ~[?:?]
+	at net.minecraft.world.level.storage.LevelStorage$Session$1.visitFile(LevelStorage.java:488) ~[minecraft-merged-bf575f6df2-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+	at net.minecraft.world.level.storage.LevelStorage$Session$1.visitFile(LevelStorage.java:483) ~[minecraft-merged-bf575f6df2-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+	at java.nio.file.Files.walkFileTree(Files.java:2810) ~[?:?]
+	at java.nio.file.Files.walkFileTree(Files.java:2881) ~[?:?]
+	at net.minecraft.world.level.storage.LevelStorage$Session.deleteSessionLock(LevelStorage.java:483) ~[minecraft-merged-bf575f6df2-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+	at net.minecraft.client.gui.screen.world.WorldListWidget$WorldEntry.delete(WorldListWidget.java:505) ~[minecraft-merged-bf575f6df2-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+	at net.minecraft.client.gui.screen.world.WorldListWidget$WorldEntry.method_20170(WorldListWidget.java:489) ~[minecraft-merged-bf575f6df2-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+	at net.minecraft.client.gui.screen.ConfirmScreen.method_37054(ConfirmScreen.java:55) ~[minecraft-merged-bf575f6df2-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+	at net.minecraft.client.gui.widget.ButtonWidget.onPress(ButtonWidget.java:94) ~[minecraft-merged-bf575f6df2-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+	at net.minecraft.client.gui.widget.PressableWidget.onClick(PressableWidget.java:56) ~[minecraft-merged-bf575f6df2-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+	at net.minecraft.client.gui.widget.ClickableWidget.mouseClicked(ClickableWidget.java:189) ~[minecraft-merged-bf575f6df2-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+	at net.minecraft.client.gui.ParentElement.mouseClicked(ParentElement.java:38) ~[minecraft-merged-bf575f6df2-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+	at net.minecraft.client.Mouse.method_1611(Mouse.java:98) ~[minecraft-merged-bf575f6df2-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+	at net.minecraft.client.gui.screen.Screen.wrapScreenError(Screen.java:409) ~[minecraft-merged-bf575f6df2-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+	at net.minecraft.client.Mouse.onMouseButton(Mouse.java:98) ~[minecraft-merged-bf575f6df2-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+	at net.minecraft.client.Mouse.method_22686(Mouse.java:169) ~[minecraft-merged-bf575f6df2-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+	at net.minecraft.util.thread.ThreadExecutor.execute(ThreadExecutor.java:102) ~[minecraft-merged-bf575f6df2-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+	at net.minecraft.client.Mouse.method_22684(Mouse.java:169) ~[minecraft-merged-bf575f6df2-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:43) ~[lwjgl-glfw-3.3.2.jar:build 13]
+	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.3.2.jar:build 13]
+	at org.lwjgl.glfw.GLFW.glfwWaitEventsTimeout(GLFW.java:3509) ~[lwjgl-glfw-3.3.2.jar:build 13]
+	at com.mojang.blaze3d.systems.RenderSystem.limitDisplayFPS(RenderSystem.java:237) ~[minecraft-merged-bf575f6df2-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+	at net.minecraft.client.MinecraftClient.render(MinecraftClient.java:1244) ~[minecraft-merged-bf575f6df2-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+	at net.minecraft.client.MinecraftClient.run(MinecraftClient.java:802) ~[minecraft-merged-bf575f6df2-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+	at net.minecraft.client.main.Main.main(Main.java:250) ~[minecraft-merged-bf575f6df2-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:506) ~[fabric-loader-0.17.3.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:72) ~[fabric-loader-0.17.3.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23) ~[fabric-loader-0.17.3.jar:?]
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) ~[dev-launch-injector-0.2.1+build.8.jar:?]
+[20:26:55] [Render thread/INFO] (Minecraft) Attempt 2...
+[20:26:55] [Render thread/INFO] (Minecraft) Loaded 7 recipes
+[20:26:55] [Render thread/INFO] (Minecraft) Loaded 1271 advancements
+[20:26:57] [Render thread/INFO] (Minecraft) Loaded 7 recipes
+[20:26:57] [Render thread/INFO] (Minecraft) Loaded 1271 advancements
+[20:26:57] [C2ME Storage #3/INFO] (C2ME Storage) Storage thread Thread[#148,C2ME Storage #3,8,main] stopped
+[20:26:58] [C2ME Storage #8/INFO] (C2ME Storage) Storage thread Thread[#153,C2ME Storage #8,8,main] stopped
+[20:26:58] [C2ME Storage #7/INFO] (C2ME Storage) Storage thread Thread[#152,C2ME Storage #7,8,main] stopped
+[20:26:58] [C2ME Storage #5/INFO] (C2ME Storage) Storage thread Thread[#150,C2ME Storage #5,8,main] stopped
+[20:26:58] [C2ME Storage #4/INFO] (C2ME Storage) Storage thread Thread[#149,C2ME Storage #4,8,main] stopped
+[20:26:58] [C2ME Storage #2/INFO] (C2ME Storage) Storage thread Thread[#147,C2ME Storage #2,8,main] stopped
+[20:26:58] [C2ME Storage #1/INFO] (C2ME Storage) Storage thread Thread[#146,C2ME Storage #1,8,main] stopped
+[20:27:06] [Render thread/INFO] (BiomeModificationImpl) Applied 0 biome modifications to 0 of 64 new biomes in 229.7 μs
+[20:27:06] [Server thread/INFO] (Velthoric) Initialized Velthoric Persistence Manager with 4 I/O threads.
+[20:27:06] [Server thread/INFO] (Minecraft) Starting integrated minecraft server version 1.20.1
+[20:27:06] [Server thread/INFO] (Minecraft) Generating keypair
+[20:27:09] [Server thread/INFO] (Minecraft) Preparing start region for dimension minecraft:overworld
+[20:27:09] [Render thread/INFO] (Minecraft) Preparing spawn area: 12%
+[20:27:10] [Render thread/INFO] (Minecraft) Preparing spawn area: 13%
+[20:27:10] [Render thread/INFO] (Minecraft) Preparing spawn area: 14%
+[20:27:11] [Render thread/INFO] (Minecraft) Preparing spawn area: 16%
+[20:27:11] [Render thread/INFO] (Minecraft) Preparing spawn area: 18%
+[20:27:12] [Render thread/INFO] (Minecraft) Preparing spawn area: 21%
+[20:27:12] [Render thread/INFO] (Minecraft) Preparing spawn area: 22%
+[20:27:13] [Render thread/INFO] (Minecraft) Preparing spawn area: 24%
+[20:27:13] [Render thread/INFO] (Minecraft) Preparing spawn area: 27%
+[20:27:14] [Render thread/INFO] (Minecraft) Preparing spawn area: 28%
+[20:27:14] [Render thread/INFO] (Minecraft) Preparing spawn area: 31%
+[20:27:15] [Render thread/INFO] (Minecraft) Preparing spawn area: 34%
+[20:27:15] [Render thread/INFO] (Minecraft) Preparing spawn area: 36%
+[20:27:16] [Render thread/INFO] (Minecraft) Preparing spawn area: 39%
+[20:27:16] [Render thread/INFO] (Minecraft) Preparing spawn area: 43%
+[20:27:17] [Render thread/INFO] (Minecraft) Preparing spawn area: 45%
+[20:27:17] [Render thread/INFO] (Minecraft) Preparing spawn area: 48%
+[20:27:18] [Render thread/INFO] (Minecraft) Preparing spawn area: 53%
+[20:27:18] [Render thread/INFO] (Minecraft) Preparing spawn area: 54%
+[20:27:19] [Render thread/INFO] (Minecraft) Preparing spawn area: 55%
+[20:27:19] [Render thread/INFO] (Minecraft) Preparing spawn area: 60%
+[20:27:20] [Render thread/INFO] (Minecraft) Preparing spawn area: 64%
+[20:27:20] [Render thread/INFO] (Minecraft) Preparing spawn area: 65%
+[20:27:21] [Render thread/INFO] (Minecraft) Preparing spawn area: 66%
+[20:27:21] [Render thread/INFO] (Minecraft) Preparing spawn area: 68%
+[20:27:22] [Render thread/INFO] (Minecraft) Preparing spawn area: 71%
+[20:27:22] [Render thread/INFO] (Minecraft) Preparing spawn area: 74%
+[20:27:23] [Render thread/INFO] (Minecraft) Preparing spawn area: 75%
+[20:27:23] [Render thread/INFO] (Minecraft) Preparing spawn area: 76%
+[20:27:24] [Render thread/INFO] (Minecraft) Preparing spawn area: 78%
+[20:27:24] [Render thread/INFO] (Minecraft) Preparing spawn area: 80%
+[20:27:25] [Render thread/INFO] (Minecraft) Preparing spawn area: 80%
+[20:27:25] [Render thread/INFO] (Minecraft) Preparing spawn area: 82%
+[20:27:26] [Render thread/INFO] (Minecraft) Preparing spawn area: 84%
+[20:27:26] [Render thread/INFO] (Minecraft) Preparing spawn area: 84%
+[20:27:27] [Render thread/INFO] (Minecraft) Preparing spawn area: 86%
+[20:27:27] [Render thread/INFO] (Minecraft) Preparing spawn area: 87%
+[20:27:28] [Render thread/INFO] (Minecraft) Preparing spawn area: 88%
+[20:27:28] [Render thread/INFO] (Minecraft) Preparing spawn area: 99%
+[20:27:29] [Server thread/INFO] (Minecraft) Summoned new Primed TNT
+[20:27:29] [Server thread/INFO] (Minecraft) Successfully summoned physics body 'velthoric:box' with ID: 6edfe64c-98a5-4f1d-bac0-3ca25f2aa681
+[20:27:29] [Server thread/INFO] (Minecraft) Successfully summoned physics body 'velthoric:box' with ID: 89bbb21e-c960-4d3a-9c3b-0016d64f6152
+[20:27:29] [Server thread/INFO] (Minecraft) Successfully summoned physics body 'velthoric:box' with ID: 3fb7ce24-0358-4413-9a98-1b8f82c95545
+[20:27:29] [Server thread/INFO] (Minecraft) Successfully summoned physics body 'velthoric:box' with ID: 95386b35-ce4c-46bd-adba-f8c061dc65ef
+[20:27:29] [Render thread/INFO] (Minecraft) Time elapsed: 19402 ms
+[20:27:29] [Server thread/INFO] (Minecraft) Changing view distance to 12, from 10
+[20:27:29] [Server thread/INFO] (Minecraft) Changing simulation distance to 5, from 0
+[20:27:29] [Server thread/INFO] (Minecraft) Player930[local:E:9b00b402] logged in with entity id 599 at (157.5, 68.0, -177.5)
+[20:27:29] [Server thread/INFO] (Minecraft) Player930 joined the game
+[20:27:29] [Render thread/INFO] (Minecraft) Loaded 2 advancements
+[20:27:41] [Server thread/INFO] (Minecraft) [Player930: Set own game mode to Survival Mode]
+[20:27:41] [Render thread/INFO] (Minecraft) [System] [CHAT] Set own game mode to Survival Mode
+[20:27:53] [Server thread/INFO] (Minecraft) Player930 was doomed to fall
+[20:27:53] [Render thread/INFO] (Minecraft) [System] [CHAT] Player930 was doomed to fall
+[20:27:55] [Server thread/INFO] (Minecraft) Removed 226 physics bodies.
+[20:27:55] [Render thread/INFO] (Minecraft) [System] [CHAT] [Server: Removed 226 physics bodies.]
+[20:27:55] [Render thread/INFO] (Minecraft) [System] [CHAT] [Vetheroac] Hello there, Vetheroac here, the bugfix initializer has ran feel free to explode stuff now
+[20:28:02] [Server thread/INFO] (Minecraft) Player930 blew up
+[20:28:02] [Render thread/INFO] (Minecraft) [System] [CHAT] Player930 blew up
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: db4a718e-9087-4ca7-9b06-0668d3f1fd1d
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 57cca47b-3561-4b8c-a3fc-90e984a5aa47
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: a2b64317-ee66-49a4-9c30-599d673ee176
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: d71a191c-99f0-42d5-ae3b-44a013421daa
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 0a93e6ad-dc18-4539-8681-1941249665e3
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 13c5797d-5207-4307-988d-119886eadab7
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 24eefc46-01b6-47a9-a7a0-f1d79526d82e
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 2790aaeb-04a3-4b23-90af-3af774e08963
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: a97c0f5a-de93-4415-874b-48be7dddbece
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: a06ebe76-b12c-4d57-a042-bac27125295c
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: f07e6d39-9f36-4f64-870e-7b464b11fbda
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: af3b44a9-a6fa-4018-8e54-68a1e4929132
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 57dd3dd5-798f-4226-85a6-d404b5601d2e
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 66ab1a5a-7f9a-424b-b591-1ceb8675a7ff
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: be277c05-16fd-4d87-81e3-e3e505d7d2d4
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: ed558008-16fa-40f0-92bd-1687ca076a78
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: d489f001-1687-4371-8f93-6ffd2f42a0c3
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: add2a90c-3b98-4c2d-8a56-5a6917be8841
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: a31ba07f-b749-47af-a17d-a3048f44e0a9
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 37388c7a-e8eb-4fc6-ba76-9bdbf7b0ae9d
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: e697e40e-f282-4594-ac8b-ce2273a1773a
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 94b1be38-962e-41b9-a870-2accb01007fe
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: b580cf90-a49a-4ac8-839d-c23092e5a959
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: b5fee658-f848-497b-8237-131344abd26a
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 0aa64ac0-e11e-4598-a1ff-58cc40e56a54
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 0e4fd143-746b-4ebc-9cdb-5ad734ea2697
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: c9205bbf-1aa7-49c8-8882-676ee00df411
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 9e7421d9-631f-4571-a4fb-e6e4201e257b
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: b552e0a8-97c2-49fe-b374-002defee964b
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: e51c4e84-f56c-4b36-a74c-628ee81de40d
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 7512cb8a-a7ba-4d13-a9fb-6b1c8c1697b6
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: f340415f-50ee-4bd6-bdfb-27f7bc37d78d
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 5a107635-1c0a-48c0-85ff-f7bd2551903b
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: c979bcf2-ebe3-4142-a7d7-c76f6fffd46e
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: a511fd79-a4ec-4784-9edc-713b1d22b96e
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 4813eba3-a8ef-48cd-bd62-9bb8b395dfa0
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 3f37fe40-e88c-4dc9-970b-f9e10b48cfa5
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: c1197d1b-df01-441f-9b76-2658e762105b
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 35582427-526c-44c0-b835-2fa59d2dce30
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 6e482cc1-63a2-41ec-b47d-f00912094954
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: be0bbe3d-13d8-493d-9f86-a8396f77d355
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: eef0eeab-b474-4ebf-a2ff-a7b2a63a4a18
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 69ed1a7a-5a2d-4529-bf11-c6108d8bc8fb
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 170c7b89-afae-4733-b006-94e0f3e2fdef
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 1b271c23-fbc8-4595-b3e4-1b3fcdeb1347
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: e65949c6-e889-4bfb-a50f-b63c97d81263
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 2dcc0d8e-4a25-41b5-bbc3-a7d2b5813114
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: e135af61-0672-49c1-9f75-a049b4020626
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: d4b32f87-2ff2-4a08-adba-2cae6a20ca6f
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 2bae64c9-2c91-4326-bc22-2da02aa6db60
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: a45b6ea5-9333-4689-aa0f-4529e483d70a
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 62c22d12-f538-42b1-80f0-3fc9b1f18c0b
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 2b35f496-2dbf-47f4-8a22-edbeadc01a32
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 61b4b4c8-97db-443a-b5a8-0b9e30a24a19
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 9924cc1a-271c-45cf-b7a2-38cc2c22c97f
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 55e51f96-df3a-4dc5-909c-6e290eabcfaa
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: d2d9ec52-75e9-4a20-962a-04fec1b1e415
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 8aed4959-bcec-4582-9d61-c80198e029cc
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 4a726181-a9e9-4d3a-a697-99d817f51041
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: bc6e5173-a4ed-44a4-aec4-92f492304e45
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 3ccb6716-211d-48e5-a4ac-b8370b6914cb
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 76800b9c-776d-4ffb-a897-28ac55c6f2e2
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 168ef01c-dba4-4b23-9308-02dc781f9ff3
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 891dd07b-d857-4ad5-ad2a-21dba101619e
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: c5c92d36-2c0e-45fa-85ef-4b92adcfae0c
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: e09e69eb-c3af-4b68-9b78-a00c8683056d
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 93f5231d-70ae-4b43-b757-b60205bcf320
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 9f11d904-acf5-473c-8afb-26a214fd7d16
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 30f8f0e9-5356-420f-bcfa-628912072354
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 64249a5b-83bb-48f0-851a-2334150ebb78
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: e240b9db-c239-4a19-b467-75e6cd25ebff
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 9fa116fd-d108-412f-8991-919c08f71817
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 6b798c3b-bf0d-4356-b2c4-105b630221f4
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 12e41730-96ea-494e-89c2-87859736cd06
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 4aa69239-6910-45c4-ada2-f45aa98657f3
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 1b626d33-ad59-4c5a-979a-085944e69f4e
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 49604ee6-939e-435a-9c1a-70542b478fd3
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: c8e5a519-a217-443f-becd-e789139c0c90
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 119bd531-6e0c-434d-8170-ce51eb6bb1cb
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: ce27fc70-fc08-41c4-8a20-fa9ddcd438a5
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 954d5141-e641-451b-a796-b92f9436b752
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 814c48d3-84b5-455d-a605-f900ffdedad4
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 9b3c8e20-cef2-436d-8f98-ba739c28e386
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: d2d0f142-4355-4dcb-b87d-991114d593a4
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 08164931-2db0-47ad-992a-2d16dd690c30
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 6059fd92-1d0b-458c-bf56-509cc2cffa52
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: fdd4d7a4-e191-4b84-9b18-08b48b69ea96
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: fe5215a2-8684-4123-b6a7-9d58690de764
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 1dd6bdc2-0847-4f1e-b2c4-03d828a3c668
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 95e8aa7c-5278-4cdd-816a-77eb815efe27
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: a5fc05bf-2e91-4f12-a71b-7f1b558f0aeb
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 27e621d7-4db1-4c85-b987-570b7b3c15c9
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 17bbb5fa-eb25-4de6-9c01-143792f8602d
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: a73827b8-caba-461b-9c36-f369d50235a9
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: c2d220b2-0553-4959-af0f-b3720e2a29b9
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: de3ac699-6076-4e85-8753-af4029dd85d9
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 9024418f-9290-45ab-aa08-238fd6990a10
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: f78f71ac-0ebb-43e6-8adf-dea296ebfb50
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 6fd667a5-508a-421f-8909-63a10373c74c
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: b3e861da-7b4d-4ffa-bd85-34135bf4ac13
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 76085735-66fe-4716-b181-50eb01ad9781
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: c721f80c-871e-4b14-b28f-e5e705996029
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 227d6e71-0ac9-4963-b123-10c5d73647f6
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 903331f9-b988-4a71-926b-afae1295d7fb
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 890c7587-171e-4612-9495-00f5aab0093b
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: dd324267-8e73-47f6-8aac-2e5e0002eb3c
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: f598f55d-3e7a-42a6-a023-0aa929a2797b
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 1796b340-0096-4359-9028-1e72e7030324
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 2832bad4-16c0-4f47-b029-407338a76447
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 617b62e3-b276-4539-9640-60aa7e24f7ed
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 7e70955f-6e89-40ab-9463-c903967a2cbe
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: daab7f6b-0c9e-4b86-8702-741bf78bbc86
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: c4d9451f-fadc-48cd-afad-1971bf079c24
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 0295529b-d001-4182-86c0-c59520a8f107
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 4e5b6ded-b1f2-4ef1-861c-ce0306a27ec9
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 64348270-bc1d-4889-a8e4-ffc2d9918bf5
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: f048603c-5b55-44e9-ab54-ec275d65a019
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 13373b2b-af6f-43e7-b121-938ef9230a69
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 718e2149-2de3-42c1-be78-0b4222cfc103
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 3f63edae-0179-481d-97cd-981d234ba6a0
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 2829fbbc-cb41-4d25-924a-063f6815ad06
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: d87eb76c-98db-43a2-a77c-ecd82e8d4368
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 953ad45b-ff24-44e5-a60d-091c728314da
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 896545ce-fd08-4b56-a192-afacc391f1e1
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 833a81dd-5632-4530-a25a-58d425640dac
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 116c79bc-e34c-4605-a74b-58389d516fdb
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 5be54b8f-9088-4728-afd1-0c4a3624813d
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: a6113f06-938f-4598-a82a-35493703baea
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: f71cd30f-6563-4154-9b5c-37955de6c28a
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: a4889307-17a3-44fc-937d-105005aa5e5b
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 2a8bb52c-eb6e-4bc8-8250-757d080d5407
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 7ee12e2b-3037-4c6f-9ba3-eb275760366a
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: f0513425-1656-47ef-896e-9b2ee69e9cc5
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 4c09a12a-8ab2-4d60-91a6-342a86394b29
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 050ae248-37c9-48b2-86ce-9c4ef0807e27
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: ac96bf77-21e7-40d9-b095-7133b239444c
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: cbafed9a-2c7e-4422-87e8-e4e42da91ffb
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 24f2eca8-0494-4b7c-8671-079c842b6a72
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: fcf758d8-b145-41b3-9215-dde63bb44fff
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 8d4d9d4f-05ab-4e44-8748-b30e60744527
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 37bd3fd6-c21e-4b43-9cd0-133ae5de8985
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 860387d5-c04d-4b06-9b46-a275f04db4b9
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: d1426ddf-de57-4aa8-82f0-560616b02cab
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 73db2a7e-8d7b-47cc-991b-bc9f4f2a12f9
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: bcffdbff-dee9-4448-8c1c-65d3a970e699
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 47c7aefc-c21c-4cbf-a958-cff6f72b3e99
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 5bdfb92b-fdbf-4e5a-8133-1a9b6107ec36
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 5d92b9e2-a59b-4abe-9622-18a87d96f493
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: b38eedd4-83c1-45a1-b416-c8e532ac9478
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: fa526d0c-25b5-437b-8611-775abbd40452
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: fdcb4641-a3fd-42ba-8b5d-f6e0e36e2637
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 18359dbd-8185-4ad2-8a72-6139f0aefeea
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 72a8140b-2e88-4c90-b620-c7495327d0a9
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: d1877442-904d-4533-b15b-ff6c8e3906d9
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 8131bc86-0f83-471f-afbe-4b954466825a
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: e4b017ec-2f58-4140-ad82-ed7928520e39
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: f751e8eb-da64-46b3-b50c-fda7d8b0b492
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 40711545-465e-40ab-bdd7-42fe6778a399
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: b9950e7a-050a-433d-8103-115e9ba79d56
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 9ddfc87c-a156-4432-9b39-6bc81283c7d2
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 157abcfd-152b-40f7-9689-442e1659e387
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: af49c607-2b8d-45b3-8a33-920c8ab191bd
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: e6ed7f9a-3d95-4470-9874-4bac61887b60
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: f13b4cfd-0b1a-482e-9cc6-bc001ef9e089
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 26604269-208f-407c-a2e8-b6894451fce0
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 1652bdf2-d303-4ec4-9feb-8b24fa7b19d8
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 3a5434e0-a033-4242-a8e1-e65c9516c449
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 87778c70-e873-4dde-8e95-97889b32e54c
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 6173d9f9-6a2e-4c47-903b-394b2e80c9e6
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: e2d70ce8-f321-4ec1-bb6b-663b346454d8
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 542ca436-0c54-47c3-997a-962631fb3521
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 58ccfde4-cfff-4ec0-a36a-e3d35260322d
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 1b233e0f-6aa6-451e-af81-e62830353b3f
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 0aabfb5d-9384-4310-b4d1-0407144205cd
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: c92787bc-1989-41ed-8501-4e102bbddb21
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: eb25223a-826c-4d13-8235-d5abdc81f2d3
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 8d71cf75-1296-4f40-a1a9-b100e478d1d0
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: d607c98b-f4f7-4212-a6b7-65523dc6eeef
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 3cc3e991-4278-4223-9139-5fea4ae81b32
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 2f266bb2-da92-462a-87c4-0525cf371f06
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: a8a81a93-3efa-4a61-b370-c6b06414a646
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: ddc4149a-fa81-4215-a811-b15003dbd59a
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 65b30e16-db47-4ed2-8628-0b120b4de883
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: e59df899-5dcf-48da-a2df-644fe6358506
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: ebc7774e-0d2d-4cca-b563-51efe310df39
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 9c221478-ee23-4cda-b699-c3b00a61d208
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 56412baf-e98f-4329-8422-4925b83feb75
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 2977cf6f-86eb-47c5-b6e9-382416889a3d
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 9d8b683f-b31a-4a33-b240-bee8f1d0fdaf
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 1cc7be8c-5b25-4bef-ad06-1981a2f8f193
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 45242e5d-c39d-4953-9373-9dc1af906aaa
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 1d750167-edc3-4419-bfee-eb7f886f06a4
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: bf2d067a-5eb0-4154-a384-065b2e4f7a74
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: ac794920-80fc-4929-84fd-9a5161da8208
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 8a3a8d5a-4f5f-4823-b2be-9911dd7ed6f3
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: b91fcbde-9cac-4293-bdf4-1b077e501c3c
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 8c010b1a-5f2e-463f-ac50-0f04a61f80b1
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 41e601ad-db4f-4ca4-b235-b70a26c1951b
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 21831d00-caea-4589-9ed0-66c182405855
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 24f90cd1-d905-4a2e-9d2c-6b07daedb9a8
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 20df0d30-1fcb-40c9-8351-5214ce09820a
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 7e2faa73-7404-4ba9-a546-77d5e494bda3
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: e8360037-e7a9-4362-a175-c34a86280ff7
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: eb80326a-b0a3-493f-be4a-7efca8882a70
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 505d9184-8e87-4e1f-a84e-67a2febcb245
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 4e96a218-1e9d-47bf-baff-00f177efed84
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 64c79ae6-23ce-47d9-b83f-fb2eae10541d
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: a8aee050-dc27-4250-9e79-6cf053644a3a
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 702c9983-1973-4315-9a6b-d8bf45ab377c
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: f7548c62-7eeb-4907-bff0-d6d428d19ca2
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 7e4e87e6-d056-490b-94f5-7977045adb96
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 69d9e4f8-e838-4328-95ab-6eeb3ac6835c
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 5228e72e-c5df-42c6-9942-4449ad6a5fbf
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 67894682-5be9-4126-a632-f9ad465e14df
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 4988d98a-ce15-48e0-8d5d-6ce662785b79
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: b01d94c6-9e5b-4816-acb3-cc19f5d3771a
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: ad2894e0-0eeb-4d95-b046-afa49c9bc482
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 75bf35eb-1349-4f07-8a19-490e632e8362
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 10b2541a-b2ad-48c5-a138-da6e0cebd957
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 8a9cfb7a-cebb-4d90-a492-be1eee040212
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 88a795a2-136b-4f3f-9620-c2f724bee26d
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 439bb73e-4ca3-4669-89f3-ed8cf26430b2
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 6b11cac9-f582-446f-b88a-4f1ee4217cc7
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 9e74f55c-bfac-4097-9d36-71bb60fa47a3
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: e3f87fc0-4e34-43db-b7a6-8cf0b44ec562
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 9576dd22-fa48-402f-8e3b-ae7c52aca6b5
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 74e87e34-7add-4bc3-a499-4d105a4edf5d
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: cc314a59-a935-4f3a-9f10-82b89e40cb21
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 3d270d6f-560a-4ad7-b8ec-bfc766621957
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 7b1df1ba-f7fc-4c3c-bf21-8a89d1b06f8b
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 3a501a05-76b3-47f2-897e-001bfd849163
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: f0247643-a1e3-455d-9c10-71f0c18f613d
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 9e0b8ae0-48fe-4912-8da4-6993b109c4c5
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: a71e4d3e-1035-476c-8dec-be92b6d165b9
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: e6a59480-19cf-4a39-8272-331d048ef4f9
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 3ac77f07-76c4-4c6c-92c4-920b4bb52797
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: ee966d56-5fe6-44ff-827d-ec0d35cb5a9a
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: f6e85c12-5810-4587-9406-b292ef4bf215
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 232cd435-0e38-4b25-be72-e9c245be6f18
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 51c327dd-a859-44b7-8f35-fd17d512b604
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 7b0f1da8-5084-4929-81a8-0f62d9dc50d9
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 7d2619d3-9786-4401-8d3f-cf0a3adf4865
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 0e81fb27-0bce-4f94-a2ad-b49a0400485c
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: a5e73f95-0757-4f6f-85f5-93b057505e94
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: d7064c18-3444-47cf-b651-fa494e4b7603
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 1626ffd6-ecf2-4979-91d9-ef0906127994
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 0145e60b-5458-41bd-9823-34bac238da0b
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 3704812b-316d-4210-ad8f-1284c73bb472
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: ea91597d-cd71-41de-95bf-e676ad497afe
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: a9116a60-de56-4597-aadc-a8fa0b75a3ee
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: eee8a5fb-6774-408e-a66a-9c4288bba056
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: fe30e2a3-4077-4ba1-8410-be60a8bb18a4
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 2cba0dd9-b84f-4aa0-9682-a166da06f2be
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 3c154e93-c6e3-463c-bfee-66db65f6dccd
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 78d2c238-c8b4-4bb1-a6f2-728773559e2f
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 0a72bd9a-4860-4a78-a1e0-d1c33bdecbc6
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: fbcecd4d-3d8b-4aa5-a8bf-87099cff8f3e
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: e09952b4-fc61-4215-ae55-3649bbae8a0d
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 53a82a6a-f0f2-4f4a-8758-477e3efeaa5c
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: bf4f0b11-1ad2-4a8d-9bbd-624ab587ca9b
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 6281adf8-b932-4d1a-aff2-35a990b0a049
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 21733329-2570-458d-8cb1-8effdee8bec5
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 34da9d43-0937-41fa-8401-bc3b68a7a29d
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 954fb202-6c4b-4ee0-b048-71c7c01afffb
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 7aa83ecb-cf62-4891-87cf-280a313b2a3b
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: c2fc1bb5-333d-4ab7-928b-8da15cbbf41f
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 1b3f47ee-d574-4b90-8495-3f2070462458
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: b7fab523-41ec-4732-97ae-e8026e74e339
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 4e1408d7-3a22-4535-9dec-b99b335faa52
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 03526fb5-bb15-4a22-8365-b61e11466524
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: f59e5d41-eeab-4d3d-9967-b250678041b1
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 1018076f-5d82-44b6-80df-0364db8fdcf9
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: ae8d5dbc-868b-4773-a72e-572bcf9495e0
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: ae021238-4106-4596-91b3-a352eca05336
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 530b6f2f-5bc7-49ec-a550-e0ca587217a9
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 0be356f5-9e16-4e70-9fff-62b752329b87
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 8f941f35-96f4-4585-a569-35fd22bbd883
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 40f01af6-a959-45f2-af20-c592c279d677
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: abd1a0fe-f71a-4a89-90f9-3702e8859624
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 873c2703-29d3-4e8e-8e22-de4b4c3f128a
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: b9964060-657a-44a2-8045-9b2eef253628
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 6e91c8ae-548a-4e6f-99f1-100d9b96ce02
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 20665148-dca6-46dc-b447-f81dad46d12f
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: fd45d725-7c6a-4a4e-81b5-c24d47980bd7
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 959afb15-6785-41d8-a519-0d5340f33d68
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 4d363581-8b32-428a-81b5-a8d825abfb60
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 6eb454a4-6b25-4cf8-ba18-ea1254c9e1e7
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 33787e2f-314d-45af-873b-a2aaadfb581e
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 1f043899-7749-4da4-93fa-5b25f89e54fe
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 6b9e36c7-3b67-4ada-b13c-040d0d6fc38c
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: a2e081f4-fd33-4173-9143-0eb0002d8263
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: b71ec50b-96cf-4228-897f-b468cbc29251
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 2224f7c8-b7f9-4e3e-87a3-6cc39077768b
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 992b4f6f-a537-456d-aab0-5133d5527438
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 3c63da05-0768-4544-bc89-d4a03b55fb4f
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 4f32ca4b-3ab8-40b6-a167-8fef0d4b6f0d
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 4efbb555-5065-4611-8bbe-b397f881f8b3
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 3723b466-c33a-4e74-a029-7c98dfadae9d
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 6325759a-0dfe-482a-a38a-baf775d0917a
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 0d48a8e2-e9b2-4686-863b-41f74776d98e
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: b9b4b09d-1ea8-4736-b571-b42eeb4b8186
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: ff9a62c9-78e0-4f44-8bca-62fc2c885449
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 18d868e9-7793-4cad-91db-a4bc274f03a3
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 99345d31-fb57-44f9-a25c-2aee4250b925
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 937b650a-14f7-4460-a578-ec4882de22b3
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: f2bf69f3-738e-4f50-bded-51f0714bb45e
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: b99a85c3-e8e9-4474-a51c-fe7383a11e1d
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 391885df-136d-45a5-b267-b2d7915e5c95
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 5f03fe44-5837-48f2-b7c4-a011996889e7
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 8fd39179-b548-4e9a-9983-ecf8a1941377
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 55c3804d-8efd-41fe-af62-50cadd59b477
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: c5d5ecc9-a56f-4416-8fb2-02178e5c7713
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: e0a60171-4a38-4eb0-868d-1ff0cc4c89c7
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: edf5966f-f376-4675-98ee-cb99ffea98e1
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 427ca87f-c685-4b07-b1ed-935111e08ae8
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 80aeaea5-0d2b-4030-926f-8a7a3c775c65
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: dd57c214-5eaa-4174-8e7c-822c501634e5
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 1f563de5-a2d1-484c-ae19-ba8c9cf80caf
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 95b6a7cf-9e2f-453c-ab29-6e226e58541c
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: cfbdd0d8-3558-49b5-9a85-73752f95c02d
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 357db1c4-1f89-460d-a191-6720610ca22d
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 47b9f461-52b7-4243-9766-f834ca9f0d32
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 034bdb6c-8a3f-435b-9807-263103905338
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: ee23cd0e-3083-4585-9015-51f8a2f815d6
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 9c906089-1393-46ec-a07f-bb98da32c2fc
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 928baf25-e9b4-47d4-b870-69337211ab6f
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 65c1ac78-02b4-4796-b989-4d80960ee37b
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 04052209-c451-4d05-aa45-910b451f07e3
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: b2b079b1-b86a-4546-9534-e91e0e1e2fa7
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: a68b4a3c-b51e-49c3-bed6-41154db84e67
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 26dcbb54-4462-4971-874f-baf69ca732b0
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: f85988ad-4fcd-46fa-9fd4-8cfaf08ad8bf
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 578875b4-e532-4a52-af21-fb81580067b6
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 0f0a4f20-3e68-4ed8-ba2c-1e22b534b79a
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 257ca526-f636-4765-b4c6-028bb485bb6f
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 397b2033-b3b7-4de8-ac1b-30c30339ea2b
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 46efa66a-19df-41aa-89ea-8a055c355920
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 30fcda5a-58bc-4324-9fb3-c49aeb4f3d78
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 375244e2-1ed3-445f-9afb-fedc414b92d2
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 0c4059b1-5fc2-4cde-a67f-b942ff107e45
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: fb9b6992-5141-4cad-8982-c6cf79fe3d7a
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 2d3d26df-5c12-4121-925b-9d0aa6d4199b
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 8981dc8d-4c69-4a19-8a88-3949a6cf8b43
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 19351a94-0f67-4115-8f3d-dd924c06220c
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: d210efa1-db68-4cc0-9dac-a13a6515c59b
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 69a49df0-e91a-4e0a-8e48-a45586ac4d2f
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: dc091f7c-27fc-4d8d-bf7f-6cb1331bbf71
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 06d9e49a-7c49-464c-ad9c-5d62ce43235d
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 40df73ee-95b2-4f58-9fe3-99f04d105774
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 3568b5b1-b766-4f73-b799-93827609f43f
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 9107d480-6c8d-4b6d-abc6-599cadb090e6
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: f9e9cfd7-6761-4747-814a-94e02609d7ab
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: f08fd0dc-4675-4c68-a5cd-8e366b616ed5
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 8ba768fb-ed93-4df3-a47e-363914eab14c
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 2a41b82e-bb9a-4f24-ba77-06c01d98f650
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: fffc82ae-dbaa-4a71-909a-2650f778e9ea
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 632c409d-5559-4a62-b151-681ab12431ba
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 5bcede0a-9185-4f5a-a3d7-c3aff6e5fecc
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 0b21c9fa-0da2-4439-a11f-36533207e809
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 96255e62-90f3-4411-85fd-9b4e2d0a3d0c
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: c4c9a95c-7ac0-4947-b1fa-3cbe38256db8
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: b1df0973-86b9-4803-90b8-b53d0b8351de
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 66e6006b-1142-4e65-a52f-c0b8e66473ed
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 773d2041-860a-4581-ae31-4cebbb503d16
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: e99d82c4-0f7c-4555-a897-ebd7fa678587
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: b5d9f4c0-2b27-4fdf-b4f1-7df100cf0b33
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 2b97472a-aded-454d-9587-c23043de9e5f
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 03c72467-4f80-4cbf-ab4c-19d20569bc8b
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 635d2edf-ef5e-467b-b924-ac82be404f40
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: d56ec202-d578-44e0-9192-749b8d952e1d
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 9edd7b17-c1f6-477f-a04d-1fb62be42aea
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 2be0f889-dd7d-4d4e-96fb-bfb57c231ae3
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: fd8e7afa-c174-47ae-baa6-86eaeb9ccd90
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 9fb9ad73-b44c-4e22-9d84-9951928b2e7a
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: d28b5851-3e66-4b64-9da9-426645e1e764
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: dd984f5b-3f13-4791-9210-956a4c5fadb4
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: d4831d9d-3e4f-4a5b-81f4-520fc56a2b81
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 416ef477-702c-4151-b7ab-f2592dcc73af
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 8cb420ee-0e58-42c9-8347-a74d050f0dd2
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 23cc635c-edc2-4030-9e45-ba623124bd8f
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 79020766-7b34-4a7b-9b42-26f363a3bb54
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: c8787c88-f013-4a1a-936d-9a2c3a533314
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: ebbd3d3b-39c2-471e-b2eb-28ff487bf4b3
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: aab62b51-f967-42c8-9fba-29ec44269b80
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 61fbce99-2796-4175-994b-fe0781bc310c
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 1ff84dd3-bf9c-482b-aac9-faf6f73b42f0
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: ffd66c27-c9d2-4e1f-8010-d75a5d2b0c38
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 38ae3847-9289-4d2f-b789-73ac4d422d2e
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 480c9fea-b200-49fd-8a3d-910f7c6c5b32
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: d93cbccd-4a1b-4f32-a378-fbb0430d5255
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 639f1d14-90cd-4f22-83ce-347374c155f4
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 0913449c-19c4-4b3c-8b73-3429531509f5
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: b6235058-344a-47fa-869f-340aa51a8889
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 7000c3c6-0ffa-4046-b47d-67b50cfdbb7b
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 2526262f-51c6-4121-8cbc-43d7b5ef7611
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 56866fa4-9f41-48f8-bd42-978ffaf70247
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: a90306b3-7961-433d-8f57-4237329939af
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 017cde5f-614f-4875-ad6b-7fe8477530df
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 03c4bf0f-5d2d-4545-bad5-cc10f4bfbd1b
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: c671d4b1-f2ff-49e0-baaa-85b1dea9c7fd
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 6ba600cf-c248-4176-91ba-9d93a2e9dfb2
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 1d6d1a00-0cd8-4c11-a046-3b9ac6670951
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 43cc4b77-4359-4f28-b99f-6c7e4b0befe4
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: da892329-f652-45cb-af82-c7a858fd5dab
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 9af9aad5-8c41-40ee-9ef4-a9a94f193c1f
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 500efa05-14dd-482b-8207-a6aeb283f5a4
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 8c25b585-c094-4fda-b94e-86e9b25a3b03
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 4c80f407-7d18-476d-9b97-d59f3b0b4dde
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 6b2ee0de-cd9a-4406-afda-0a3df5f43caf
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 5deb7140-55c4-4279-8af1-4a09344576bb
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 29f37097-9275-4efc-849d-ec3ba4bede2d
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 1e3dd96d-e910-4c7b-96b8-a80269764e43
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: a376fd07-43c8-4eff-a300-29e0bf477190
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: b05d2671-31e9-4919-9fc2-82972d02a3be
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 9b6179c8-76fe-46fe-a0ae-5e1f5d413656
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 9e7b87d3-0af4-43fb-bd1b-15d12f4f5885
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: a497d44f-e73d-4302-b003-bed83b97e59d
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 3bda0861-bb78-4d5b-9148-ebe4c1ed3470
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: dcd57e98-c4ce-4756-bb44-705bf5e38bbd
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 4b3210a9-30de-4559-b9b2-cdc36432811e
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 9fc45e8f-f6f9-408a-b46e-ae1bf2b74114
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 18188ea2-4ad9-4cee-84d4-034f17f4681e
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 94eb9d39-0d61-4d25-8f1d-b8ed8a38cff4
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: b06d770d-586b-4861-bf40-5aafdd3a43ba
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: a0950d30-1974-49df-95de-82b3f8ba9da8
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 422a0142-257f-41d5-ba56-bd8c59426c5d
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 0aabfaf3-a7d4-4c2c-826f-b1114d379bf0
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 74320c36-c77a-4969-94ea-0f0bdcfa5327
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 4caa3a41-aef1-4c2d-8944-aa5b6857c6c8
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 01feaffc-538a-4b38-9130-1701105beb5a
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 29044610-5b36-43a0-944e-4b848f7c795f
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 99712b7d-1e30-4e84-b0dd-a19369537dc4
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: cd28fa60-e423-442e-bcc9-d438513d971e
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 159b12b3-e908-4bb6-81cc-3c3ac2b98d12
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 65cebe98-f4da-469c-bfad-a7c7b142ff13
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 71fbe08e-08ae-4357-80e7-8c2046c80783
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: dc883860-3a40-4fab-af43-d3e303a4452f
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 7b7997c0-9e6b-4fd4-8ac5-199205c8d5f9
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 7327ea4a-475a-4246-8128-8c0593154b82
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 2cc53e78-6719-426f-b5d8-6c8e33e20f5a
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 77bec6a8-67b5-437d-980f-b26fd42b2c7d
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 9c11bfa1-df62-41be-a293-5218798a4369
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 5423f2f7-f74d-4414-8d90-59ca2caf1b9c
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 681ad017-fe58-4daf-b33c-60263b144dce
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: cd7798ed-598d-4301-8a5f-185610822da5
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 5c636279-9957-44bf-aaf4-4a7f7f12da17
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 945dec24-9d56-4ebb-910e-6454e6ce72af
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: aafe2e1b-e20d-4fff-b017-c5b2b920630a
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: b0300ee4-6f27-46ca-b536-ab83518edd4a
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 7b6c4060-360e-4eca-85ce-3a6b457a4e7a
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: fef31f0a-ac88-4ce5-bf66-f85034eebd70
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 6c58a496-bd6e-41aa-ac5b-325ce03b2740
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 9f0b4d5c-e25a-4fbc-b363-2e07fa4456e5
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: b31d9c86-9e39-4d74-9fec-f90fd30bd850
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 72ac8708-d28d-48c7-9a6d-dfd993b52e96
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 5f73cc93-b03e-4e4b-80d9-6c10f1476f50
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 22aeb298-f055-4dd7-8c9c-50c48c397365
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: ba13d405-1f2f-4224-936e-f5f0ff542ccb
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 744d2c5e-3da4-4ea1-92f6-5c2d243c0fcf
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 285c8ad4-74ce-4210-b298-f5d2382ab76c
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 200c8542-0642-46e9-a8f5-7aef1a6a5ba2
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: fda8ae0f-702c-4393-bd24-b233c557061e
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: f50749dd-6909-418b-a78f-cf178c8965de
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 3e4fcc76-f9c7-4692-93b8-ed3f7f597a8a
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: dd1fb298-6510-4206-849c-2b5758f64cc4
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 7575cd7e-3603-4fef-9bcd-dab9fc275974
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 93e41bc8-10a9-4992-945e-d4230f606c8e
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 0ad02358-8288-490e-b59c-e88b015d3672
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: ab649997-5c9d-44f8-b91f-41c49c0a662f
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 22ce5093-bb71-4444-9864-1e7a749cceb6
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: e8c673bc-0b41-4cb7-8794-378697eb954b
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: c652117f-6a92-4a69-a3d5-f5846b500a11
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 67dc7436-362d-4bd9-a68a-77c5ba90e75d
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 7cecbbc8-831e-4c11-9a81-e71d551b8f77
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: bbd4bcd3-fe5d-4167-82bd-ed2d297bfacf
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: ed3bf268-f7b2-442c-8cc4-cfcd13dc036f
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: ee2a71e6-8b90-4a59-a7bf-8735bf423fee
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 4c73df44-edd4-42df-ae74-be0fa538d15a
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: f26c1485-4ba3-4e3b-a0fb-bf48d17e572a
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 668816a9-4006-4be9-9942-0a7a81eda3ea
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: b2d36920-9ebb-4243-9f3e-185e969c45a0
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 7f492d08-04ef-4a3f-a854-3a39a6bb6db5
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 29a7186f-8da9-461a-a20d-9dfe5d5729c0
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: e8dfe441-f420-4f9d-a2bc-39efd6123efb
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: c4ed5733-25bf-4651-9e3f-c9b2f2ebf70f
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 50b94411-fc8b-46ff-baa0-220698cc41d0
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 114ab4f1-7bfe-49be-bec9-ddbca783edf5
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 227590d5-4ae0-4588-8aff-4fd815052f3a
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 129ea25d-dd72-4d3e-a359-ee83ac6a761c
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: a9f442fc-2db6-4596-948f-10954767cf6c
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: af46b9cb-9e79-4c77-9d22-2b31325ca464
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: ea260db3-08eb-4a8d-aaba-b26795adbf5a
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: cb888ce3-a86f-4b98-a13a-97249b66a8fa
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 0f71d7bc-0e87-4c85-89e0-49ecc94ccc45
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: f52324a7-3e05-4270-81de-912e6500e0b2
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 68dfbb8c-b590-4748-8c67-4b5189888931
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: db8b1b37-15f1-41e4-9e75-92e5ef6adda7
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 513dbf0b-4b5f-4a18-a7a5-dcb6a9554fda
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 247c2db7-64c7-48dc-a1d8-e12216184578
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 595828e2-cf97-45fd-94cc-896bd00fd178
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 35faa56a-0ea2-405b-8a8c-1b2e28eb3227
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 45c87120-ffb5-4a47-8165-606d9f6d7f12
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: dafa6118-3cbc-4a97-aac1-a25b287451f6
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 17c401ff-b2c7-48be-8344-cb2a6458e78f
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 38eecd54-a611-4a66-983b-3a2b945706e8
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 42915e57-46e4-4729-8ff0-5f4141be698d
+[20:28:04] [Render thread/WARN] (Velthoric) Client received spawn request for already existing body: 2f9da6ff-5720-4d24-b63f-ea831028b8e1
+[20:28:06] [Server thread/INFO] (Minecraft) [Player930: Set own game mode to Creative Mode]
+[20:28:06] [Render thread/INFO] (Minecraft) [System] [CHAT] Set own game mode to Creative Mode
+[20:28:08] [Server thread/INFO] (Minecraft) [Player930: Removed 507 physics bodies.]
+[20:28:08] [Render thread/INFO] (Minecraft) [System] [CHAT] Removed 507 physics bodies.
+[20:28:08] [Server thread/INFO] (Minecraft) [Player930: Removed 0 physics bodies.]
+[20:28:08] [Render thread/INFO] (Minecraft) [System] [CHAT] Removed 0 physics bodies.
+[20:28:08] [Server thread/INFO] (Minecraft) [Player930: Removed 0 physics bodies.]
+[20:28:08] [Render thread/INFO] (Minecraft) [System] [CHAT] Removed 0 physics bodies.
+[20:28:21] [Server thread/INFO] (Minecraft) [Player930: Removed 0 physics bodies.]
+[20:28:21] [Render thread/INFO] (Minecraft) [System] [CHAT] Removed 0 physics bodies.
+[20:28:21] [Server thread/INFO] (Minecraft) [Player930: Removed 0 physics bodies.]
+[20:28:21] [Render thread/INFO] (Minecraft) [System] [CHAT] Removed 0 physics bodies.
+[20:28:21] [Server thread/INFO] (Minecraft) [Player930: Removed 0 physics bodies.]
+[20:28:21] [Render thread/INFO] (Minecraft) [System] [CHAT] Removed 0 physics bodies.
+[20:28:21] [Server thread/INFO] (Minecraft) [Player930: Removed 0 physics bodies.]
+[20:28:21] [Render thread/INFO] (Minecraft) [System] [CHAT] Removed 0 physics bodies.
+[20:28:22] [Server thread/INFO] (Minecraft) [Player930: Removed 0 physics bodies.]
+[20:28:22] [Render thread/INFO] (Minecraft) [System] [CHAT] Removed 0 physics bodies.
+[20:28:25] [Server thread/INFO] (Minecraft) [Player930: Removed 0 physics bodies.]
+[20:28:25] [Render thread/INFO] (Minecraft) [System] [CHAT] Removed 0 physics bodies.
+[20:28:25] [Server thread/INFO] (Minecraft) [Player930: Removed 0 physics bodies.]
+[20:28:25] [Render thread/INFO] (Minecraft) [System] [CHAT] Removed 0 physics bodies.
+[20:28:25] [Server thread/INFO] (Minecraft) [Player930: Removed 0 physics bodies.]
+[20:28:25] [Render thread/INFO] (Minecraft) [System] [CHAT] Removed 0 physics bodies.
+[20:28:25] [Server thread/INFO] (Minecraft) [Player930: Removed 0 physics bodies.]
+[20:28:25] [Render thread/INFO] (Minecraft) [System] [CHAT] Removed 0 physics bodies.
+[20:28:26] [Server thread/INFO] (Minecraft) [Player930: Removed 0 physics bodies.]
+[20:28:26] [Render thread/INFO] (Minecraft) [System] [CHAT] Removed 0 physics bodies.
+[20:28:26] [Server thread/INFO] (Minecraft) [Player930: Removed 0 physics bodies.]
+[20:28:26] [Render thread/INFO] (Minecraft) [System] [CHAT] Removed 0 physics bodies.
+[20:28:26] [Server thread/INFO] (Minecraft) [Player930: Removed 0 physics bodies.]
+[20:28:26] [Render thread/INFO] (Minecraft) [System] [CHAT] Removed 0 physics bodies.
+[20:28:26] [Server thread/INFO] (Minecraft) [Player930: Removed 0 physics bodies.]
+[20:28:26] [Render thread/INFO] (Minecraft) [System] [CHAT] Removed 0 physics bodies.
+[20:28:27] [Server thread/INFO] (Minecraft) [Player930: Removed 0 physics bodies.]
+[20:28:27] [Render thread/INFO] (Minecraft) [System] [CHAT] Removed 0 physics bodies.
+[20:28:27] [Server thread/INFO] (Minecraft) [Player930: Removed 0 physics bodies.]
+[20:28:27] [Render thread/INFO] (Minecraft) [System] [CHAT] Removed 0 physics bodies.
+[20:28:27] [Server thread/INFO] (Minecraft) [Player930: Removed 0 physics bodies.]
+[20:28:27] [Render thread/INFO] (Minecraft) [System] [CHAT] Removed 0 physics bodies.
+[20:28:32] [Server thread/INFO] (Minecraft) [Player930: Removed 0 physics bodies.]
+[20:28:32] [Render thread/INFO] (Minecraft) [System] [CHAT] Removed 0 physics bodies.
+[20:28:34] [Server thread/WARN] (Velthoric) VoxelShape conversion for BlockState Block{minecraft:grass} failed. Using default BoxShape.
+[20:28:34] [Server thread/WARN] (Velthoric) VoxelShape conversion for BlockState Block{minecraft:grass} failed. Using default BoxShape.
+[20:28:34] [Server thread/INFO] (Minecraft) [Player930: Removed 243 physics bodies.]
+[20:28:34] [Render thread/INFO] (Minecraft) [System] [CHAT] Removed 243 physics bodies.
+[20:28:34] [Server thread/INFO] (Minecraft) [Player930: Removed 0 physics bodies.]
+[20:28:34] [Render thread/INFO] (Minecraft) [System] [CHAT] Removed 0 physics bodies.
+[20:28:35] [Server thread/INFO] (Minecraft) [Player930: Removed 0 physics bodies.]
+[20:28:35] [Server thread/INFO] (Minecraft) [Player930: Removed 0 physics bodies.]
+[20:28:35] [Render thread/INFO] (Minecraft) [System] [CHAT] Removed 0 physics bodies.
+[20:28:35] [Render thread/INFO] (Minecraft) [System] [CHAT] Removed 0 physics bodies.
+[20:28:35] [Server thread/INFO] (Minecraft) [Player930: Removed 0 physics bodies.]
+[20:28:35] [Render thread/INFO] (Minecraft) [System] [CHAT] Removed 0 physics bodies.
+[20:29:12] [Server thread/INFO] (Minecraft) Saving and pausing game...
+[20:29:12] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[20:29:12] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[20:29:12] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[20:29:23] [Render thread/INFO] (Minecraft) Stopping!
+[20:29:23] [Server thread/INFO] (Minecraft) Player930 lost connection: Disconnected
+[20:29:23] [Server thread/INFO] (Minecraft) Player930 left the game
+[20:29:23] [Server thread/INFO] (Minecraft) Stopping singleplayer server as player logged out
+[20:29:23] [Server thread/INFO] (Minecraft) Stopping server
+[20:29:23] [Server thread/INFO] (Minecraft) Saving players
+[20:29:23] [Server thread/INFO] (Minecraft) Saving worlds
+[20:29:24] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[20:29:24] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[20:29:24] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[20:29:24] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (New World): All chunks are saved
+[20:29:24] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[20:29:24] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[20:29:24] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+[20:29:24] [C2ME Storage #15/INFO] (C2ME Storage) Storage thread Thread[#199,C2ME Storage #15,8,main] stopped
+[20:29:24] [C2ME Storage #18/INFO] (C2ME Storage) Storage thread Thread[#202,C2ME Storage #18,8,main] stopped
+[20:29:24] [C2ME Storage #12/INFO] (C2ME Storage) Storage thread Thread[#195,C2ME Storage #12,8,main] stopped
