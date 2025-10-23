@@ -25,5 +25,12 @@ public class BlockLootTableLibrary extends FabricBlockLootTableProvider {
         addDrop(VetheroacBlocks.onezero_Tnt_Block);
         addDrop(VetheroacBlocks.five_Tnt_Block);
         addDrop(VetheroacBlocks.Xray_Tnt_Block);
+        addDrop(VetheroacBlocks.WARRIAR_Tnt_Block);
+        addDrop(VetheroacBlocks.Wither_Tnt_Block);
+        addDrop(VetheroacBlocks.Hole_Tnt_Block);
+        addDrop(VetheroacBlocks.Launch_Tnt_Block);
+        addDrop(VetheroacBlocks.Timer_Tnt_Block);
+        addDrop(VetheroacBlocks.Lucky_Timer_Tnt_Block);
+        addDrop(VetheroacBlocks.Ore_Tnt_Block);
     }
 }

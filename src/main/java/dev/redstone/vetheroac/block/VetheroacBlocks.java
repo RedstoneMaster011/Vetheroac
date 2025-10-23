@@ -30,6 +30,12 @@ public class VetheroacBlocks {
     public static final Block five_Tnt_Block = RegisterBlock("5x_tnt", new fiveTntBlock(FabricBlockSettings.copyOf(Blocks.TNT)));
     public static final Block Xray_Tnt_Block = RegisterBlock("xray_tnt", new XrayTntBlock(FabricBlockSettings.copyOf(Blocks.TNT)));
     public static final Block WARRIAR_Tnt_Block = RegisterBlock("warriar_tnt", new WARRIARTntBlock(FabricBlockSettings.copyOf(Blocks.TNT)));
+    public static final Block Wither_Tnt_Block = RegisterBlock("wither_tnt", new WitherTntBlock(FabricBlockSettings.copyOf(Blocks.TNT)));
+    public static final Block Hole_Tnt_Block = RegisterBlock("hole_tnt", new HoleTntBlock(FabricBlockSettings.copyOf(Blocks.TNT)));
+    public static final Block Launch_Tnt_Block = RegisterBlock("launch_tnt", new LaunchTntBlock(FabricBlockSettings.copyOf(Blocks.TNT)));
+    public static final Block Timer_Tnt_Block = RegisterBlock("timer_tnt", new TimerTntBlock(FabricBlockSettings.copyOf(Blocks.TNT)));
+    public static final Block Lucky_Timer_Tnt_Block = RegisterBlock("lucky_timer_tnt", new LuckyTimerTntBlock(FabricBlockSettings.copyOf(Blocks.TNT)));
+    public static final Block Ore_Tnt_Block = RegisterBlock("ore_tnt", new OreTntBlock(FabricBlockSettings.copyOf(Blocks.TNT)));
 
     private static Block RegisterBlock(String name, Block block) {
         RegisterItem(name, block);

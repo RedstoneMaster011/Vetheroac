@@ -1,15 +1,22 @@
-// 1.20.1	2025-10-21T20:25:28.5590327	Vetheroac/Block Loot Tables
+// 1.20.1	2025-10-23T15:28:16.1550814	Vetheroac/Block Loot Tables
 8527f969ce81a8f19df1b9ef38be037d140b3161 data\vetheroac\loot_tables\blocks\lucky_tnt.json
 0fea7e775d7335daad65adc7235674a9166b165a data\vetheroac\loot_tables\blocks\village_tnt.json
 c45b59434f52a9a3b4a97e8eb24995f038ddb0fa data\vetheroac\loot_tables\blocks\split_tnt.json
 c692c299ca456526ae885092cad2f2e07dcb9cd4 data\vetheroac\loot_tables\blocks\20x_tnt.json
+802cc808d99db200e279e08ebaebcb65c61ddf4d data\vetheroac\loot_tables\blocks\ore_tnt.json
+348c37ecf0bdcfb6e03dced6b32c61e15d7fba0f data\vetheroac\loot_tables\blocks\hole_tnt.json
+53403b44b3f8244595ff6dcde2c3bf1434358f6a data\vetheroac\loot_tables\blocks\launch_tnt.json
 de676327a7c2c82a6e39c903b80aedecedb4665f data\vetheroac\loot_tables\blocks\zombie_tnt.json
+9cdc1a26347aae8061ddc6a755c180ab275f9410 data\vetheroac\loot_tables\blocks\lucky_timer_tnt.json
 3ff7b555622d53b804a3612088cd4c326aed154c data\vetheroac\loot_tables\blocks\rain_tnt.json
 65ed08c0c99edd33df28727717230d8cfea3d3ba data\vetheroac\loot_tables\blocks\night_tnt.json
 328557521de62522a15582f83ee6a238eb63fa21 data\vetheroac\loot_tables\blocks\xray_tnt.json
 3b17a33a5bf0ff9ba66a649f5e2a3fb26735b171 data\vetheroac\loot_tables\blocks\5x_tnt.json
+538b815a7f74c52dbdd8deb28abf4e8b3cb7dc5e data\vetheroac\loot_tables\blocks\warriar_tnt.json
 286747876376bd65feec09d96fb7e4a5541eb90c data\vetheroac\loot_tables\blocks\day_tnt.json
+476583f6fc7d5d964313db47948588d01be70c66 data\vetheroac\loot_tables\blocks\timer_tnt.json
 51ff30d29ab8f178a461d03b83b24572bbdba107 data\vetheroac\loot_tables\blocks\chunk_tnt.json
 1567f7456521c2bfc449d067497c6cd6de371e87 data\vetheroac\loot_tables\blocks\paint_tnt.json
+c792b381abf92f1be68d03b671178f7f107b47ce data\vetheroac\loot_tables\blocks\wither_tnt.json
 29fae49767e24635cf491bf9dcf24384bbcbf9eb data\vetheroac\loot_tables\blocks\10x_tnt.json
 d68650a0667094424dabb5e61c517eb35676f742 data\vetheroac\loot_tables\blocks\powerful_tnt.json

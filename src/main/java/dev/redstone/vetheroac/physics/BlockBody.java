@@ -1,3 +1,8 @@
+/*
+ * This file is part of Velthoric.
+ * Licensed under LGPL 3.0.
+ */
+
 package dev.redstone.vetheroac.physics;
 
 import com.github.stephengold.joltjni.BodyCreationSettings;
@@ -12,15 +17,10 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.shape.VoxelShape;
 import net.xmx.velthoric.natives.VxLayers;
 import net.xmx.velthoric.network.VxByteBuf;
-/*
- * This file is part of Velthoric.
- * Licensed under LGPL 3.0.
- */
 
 import net.xmx.velthoric.physics.body.registry.VxBodyType;
 import net.xmx.velthoric.physics.body.sync.VxDataAccessor;
 import net.xmx.velthoric.physics.body.sync.VxDataSerializers;
-import net.xmx.velthoric.physics.body.sync.VxSynchronizedData;
 import net.xmx.velthoric.physics.body.type.VxRigidBody;
 import net.xmx.velthoric.physics.body.type.factory.VxRigidBodyFactory;
 import net.xmx.velthoric.physics.body.util.VxVoxelShapeUtil;

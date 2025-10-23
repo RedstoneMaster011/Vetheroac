@@ -42,6 +42,12 @@ public class ItemList {
                         entries.add(VetheroacBlocks.five_Tnt_Block);
                         entries.add(VetheroacBlocks.Xray_Tnt_Block);
                         entries.add(VetheroacBlocks.WARRIAR_Tnt_Block);
+                        entries.add(VetheroacBlocks.Wither_Tnt_Block);
+                        entries.add(VetheroacBlocks.Hole_Tnt_Block);
+                        entries.add(VetheroacBlocks.Launch_Tnt_Block);
+                        entries.add(VetheroacBlocks.Timer_Tnt_Block);
+                        entries.add(VetheroacBlocks.Lucky_Timer_Tnt_Block);
+                        entries.add(VetheroacBlocks.Ore_Tnt_Block);
 
 
                     }).build());

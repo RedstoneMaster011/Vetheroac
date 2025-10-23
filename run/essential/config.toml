@@ -22,6 +22,7 @@
 [hidden]
 	play_emote_sounds_in_wardrobe = true
 	previously_launched_with_container = 1
+	acknowledged_permanent_suspension = false
 
 	[hidden.hidden]
 		emote_perspective = 1

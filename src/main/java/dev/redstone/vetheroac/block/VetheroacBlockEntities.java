@@ -24,6 +24,12 @@ public class VetheroacBlockEntities {
     public static BlockEntityType<fiveTntBlockEntity>  FIVE_TNT_BLOCK_ENTITY;
     public static BlockEntityType<XrayTntBlockEntity>  XRAY_TNT_BLOCK_ENTITY;
     public static BlockEntityType<WARRIARTntBlockEntity>  WARRIAR_TNT_BLOCK_ENTITY;
+    public static BlockEntityType<WitherTntBlockEntity>  WITHER_TNT_BLOCK_ENTITY;
+    public static BlockEntityType<HoleTntBlockEntity>  HOLE_TNT_BLOCK_ENTITY;
+    public static BlockEntityType<LaunchTntBlockEntity>  LAUNCH_TNT_BLOCK_ENTITY;
+    public static BlockEntityType<TimerTntBlockEntity>  TIMER_TNT_BLOCK_ENTITY;
+    public static BlockEntityType<LuckyTimerTntBlockEntity>  LUCKY_TIMER_TNT_BLOCK_ENTITY;
+    public static BlockEntityType<OreTntBlockEntity>  ORE_TNT_BLOCK_ENTITY;
 
     public static void register() {
         POWERFUL_TNT_BLOCK_ENTITY = Registry.register(
@@ -126,6 +132,42 @@ public class VetheroacBlockEntities {
                 Registries.BLOCK_ENTITY_TYPE,
                 new Identifier("vetheroac", "warriar_tnt_block_entity"),
                 BlockEntityType.Builder.create(WARRIARTntBlockEntity::new, VetheroacBlocks.WARRIAR_Tnt_Block).build(null)
+        );
+
+        WITHER_TNT_BLOCK_ENTITY = Registry.register(
+                Registries.BLOCK_ENTITY_TYPE,
+                new Identifier("vetheroac", "wither_tnt_block_entity"),
+                BlockEntityType.Builder.create(WitherTntBlockEntity::new, VetheroacBlocks.Wither_Tnt_Block).build(null)
+        );
+
+        HOLE_TNT_BLOCK_ENTITY = Registry.register(
+                Registries.BLOCK_ENTITY_TYPE,
+                new Identifier("vetheroac", "hole_tnt_block_entity"),
+                BlockEntityType.Builder.create(HoleTntBlockEntity::new, VetheroacBlocks.Hole_Tnt_Block).build(null)
+        );
+
+        LAUNCH_TNT_BLOCK_ENTITY = Registry.register(
+                Registries.BLOCK_ENTITY_TYPE,
+                new Identifier("vetheroac", "launch_tnt_block_entity"),
+                BlockEntityType.Builder.create(LaunchTntBlockEntity::new, VetheroacBlocks.Launch_Tnt_Block).build(null)
+        );
+
+        TIMER_TNT_BLOCK_ENTITY = Registry.register(
+                Registries.BLOCK_ENTITY_TYPE,
+                new Identifier("vetheroac", "timer_tnt_block_entity"),
+                BlockEntityType.Builder.create(TimerTntBlockEntity::new, VetheroacBlocks.Timer_Tnt_Block).build(null)
+        );
+
+        LUCKY_TIMER_TNT_BLOCK_ENTITY = Registry.register(
+                Registries.BLOCK_ENTITY_TYPE,
+                new Identifier("vetheroac", "lucky_timer_tnt_block_entity"),
+                BlockEntityType.Builder.create(LuckyTimerTntBlockEntity::new, VetheroacBlocks.Lucky_Timer_Tnt_Block).build(null)
+        );
+
+        ORE_TNT_BLOCK_ENTITY = Registry.register(
+                Registries.BLOCK_ENTITY_TYPE,
+                new Identifier("vetheroac", "ore_tnt_block_entity"),
+                BlockEntityType.Builder.create(OreTntBlockEntity::new, VetheroacBlocks.Ore_Tnt_Block).build(null)
         );
     }
 }

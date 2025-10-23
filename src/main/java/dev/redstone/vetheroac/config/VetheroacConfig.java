@@ -58,7 +58,7 @@ public class VetheroacConfig extends Config {
 
     public static class PaintTntSection extends ConfigSection {
         @Comment("Size Of Paint (0 is none)")
-        @Name("Xray Size: default: 3")
+        @Name("Paint Size: default: 3")
         public ValidatedInt PaintSize = new ValidatedInt(3, 70, 0);
     }
 
@@ -97,9 +97,49 @@ public class VetheroacConfig extends Config {
     public ZombieTntSection ZombieTntSection = new ZombieTntSection();
 
     public static class ZombieTntSection extends ConfigSection {
-        @Comment("Amount Of Zombies Entities To Spawn")
+        @Comment("Amount Of Zombies To Spawn")
         @Name("Amount To Spawn: default: 15")
         public ValidatedInt Amount = new ValidatedInt(15, 100, 0);
+    }
+
+    public WitherTntSection WitherTntSection = new WitherTntSection();
+
+    public static class WitherTntSection extends ConfigSection {
+        @Comment("Amount Of Withers To Spawn")
+        @Name("Amount To Spawn: default: 1")
+        public ValidatedInt Amount = new ValidatedInt(1, 100, 0);
+    }
+
+    public LaunchTntSection LaunchTntSection = new LaunchTntSection();
+
+    public static class LaunchTntSection extends ConfigSection {
+        @Comment("Amount Of TNT Entities To Spawn")
+        @Name("Amount To Spawn: default: 15")
+        public ValidatedInt Amount = new ValidatedInt(15, 100, 0);
+    }
+
+    public TimerTntSection TimerTntSection = new TimerTntSection();
+
+    public static class TimerTntSection extends ConfigSection {
+        @Comment("Time Untell Explode")
+        @Name("Time: default: 20")
+        public int Time = 20;
+    }
+
+    public LuckyTimerTntSection LuckyTimerTntSection = new LuckyTimerTntSection();
+
+    public static class LuckyTimerTntSection extends ConfigSection {
+        @Comment("Random Time from 0 to Time Explode")
+        @Name("Random Time: default: 100")
+        public int RandomTime = 100;
+    }
+
+    public OreTntSection OreTntSection = new OreTntSection();
+
+    public static class OreTntSection extends ConfigSection {
+        @Comment("Size Of Paint (0 is none)")
+        @Name("Xray Size: default: 10")
+        public ValidatedInt OreSize = new ValidatedInt(10, 70, 0);
     }
 
     @Override
