@@ -35,7 +35,7 @@ public class ServerWorldMixin {
         BlockPos origin = self.getBlockPos();
 
 
-        if (!VetheroacConfigs.VetheroacConfig.BaseTntSection.Physic_Based_TNT) return;
+        if (!VetheroacConfigs.VetheroacConfig.MiscSection.Physic_Based_TNT) return;
 
         for (BlockPos pos : BlockPos.iterateOutwards(origin, 2, 2, 2)) {
             BlockState state = world.getBlockState(pos);
@@ -71,7 +71,7 @@ public class ServerWorldMixin {
             server.submit(() -> {
                 server.submit(() -> {
                     server.submit(() -> {
-                        for (int i = 0; i < VetheroacConfigs.VetheroacConfig.BaseTntSection.PowerTNT.get(); i++) {
+                        for (int i = 0; i < VetheroacConfigs.VetheroacConfig.MiscSection.PowerTNT.get(); i++) {
                             Vec3d spawnPos = Vec3d.ofCenter(origin).add(0, -2, 0);
 
                             ServerWorld serverWorld = world;

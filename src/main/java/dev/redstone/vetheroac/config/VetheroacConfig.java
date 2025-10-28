@@ -16,10 +16,10 @@ public class VetheroacConfig extends Config {
         super(Identifier.of(MOD_ID, "vetheroac"));
     }
 
-    public BaseTntSection BaseTntSection = new BaseTntSection();
+    public MiscSection MiscSection = new MiscSection();
 
 
-    public static class BaseTntSection extends ConfigSection {
+    public static class MiscSection extends ConfigSection {
         @Comment("Enables physics-based TNT explosion behavior (idk why you would want to turn this off in this mod)")
         @Name("Physics TNT")
         public boolean Physic_Based_TNT = true;
@@ -28,6 +28,10 @@ public class VetheroacConfig extends Config {
         @Name("Power TNT: default: 5")
         public ValidatedInt PowerTNT = new ValidatedInt(5, 50, 0);
 
+
+        @Comment("Enables physics-based ragdoll when a 'Player' dies")
+        @Name("Ragdoll On Death")
+        public boolean RagdollOnDeath = true;
     }
 
     public LuckyTntSection LuckyTntSection = new LuckyTntSection();
