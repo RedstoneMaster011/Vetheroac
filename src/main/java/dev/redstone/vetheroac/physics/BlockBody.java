@@ -21,6 +21,7 @@ import net.xmx.velthoric.network.VxByteBuf;
 import net.xmx.velthoric.physics.body.registry.VxBodyType;
 import net.xmx.velthoric.physics.body.sync.VxDataAccessor;
 import net.xmx.velthoric.physics.body.sync.VxDataSerializers;
+import net.xmx.velthoric.physics.body.sync.VxSynchronizedData;
 import net.xmx.velthoric.physics.body.type.VxRigidBody;
 import net.xmx.velthoric.physics.body.type.factory.VxRigidBodyFactory;
 import net.xmx.velthoric.physics.body.util.VxVoxelShapeUtil;
@@ -83,7 +84,7 @@ public class BlockBody extends VxRigidBody {
     }
 
     @Override
-    protected void defineSyncData() {
+    protected void defineSyncData(VxSynchronizedData.Builder builder) {
 
     }
 
