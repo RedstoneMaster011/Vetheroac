@@ -28,7 +28,7 @@ public class VetheroacBlocks {
     public static final Block twozero_Tnt_Block = RegisterBlock("20x_tnt", new twozeroTntBlock(FabricBlockSettings.copyOf(Blocks.TNT)));
     public static final Block onezero_Tnt_Block = RegisterBlock("10x_tnt", new onezeroTntBlock(FabricBlockSettings.copyOf(Blocks.TNT)));
     public static final Block five_Tnt_Block = RegisterBlock("5x_tnt", new fiveTntBlock(FabricBlockSettings.copyOf(Blocks.TNT)));
-    public static final Block Xray_Tnt_Block = RegisterBlock("xray_tnt", new XrayTntBlock(FabricBlockSettings.copyOf(Blocks.TNT)));
+    public static final Block Xray_Tnt_Block = RegisterBlock("xray_tnt", new XrayTntBlock(FabricBlockSettings.copyOf(Blocks.TNT).nonOpaque().solidBlock(Blocks::never).blockVision(Blocks::never)));
     public static final Block WARRIAR_Tnt_Block = RegisterBlock("warriar_tnt", new WARRIARTntBlock(FabricBlockSettings.copyOf(Blocks.TNT)));
     public static final Block Wither_Tnt_Block = RegisterBlock("wither_tnt", new WitherTntBlock(FabricBlockSettings.copyOf(Blocks.TNT)));
     public static final Block Hole_Tnt_Block = RegisterBlock("hole_tnt", new HoleTntBlock(FabricBlockSettings.copyOf(Blocks.TNT)));

@@ -1,6 +1,8 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/cube_bottom_top",
   "textures": {
-    "all": "vetheroac:block/paint_tnt"
+    "bottom": "vetheroac:block/paint_tnt_bottom",
+    "side": "vetheroac:block/paint_tnt_side",
+    "top": "vetheroac:block/paint_tnt_top"
   }
 }

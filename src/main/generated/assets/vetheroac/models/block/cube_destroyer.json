@@ -1,6 +1,8 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/cube_bottom_top",
   "textures": {
-    "all": "vetheroac:block/cube_destroyer"
+    "bottom": "vetheroac:block/cube_destroyer_bottom",
+    "side": "vetheroac:block/cube_destroyer_side",
+    "top": "vetheroac:block/cube_destroyer_top"
   }
 }

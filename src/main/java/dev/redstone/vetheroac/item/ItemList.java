@@ -16,13 +16,12 @@ public class ItemList {
     public static final ItemGroup Vetheroac_GROUP = Registry.register(Registries.ITEM_GROUP,
             new Identifier(Vetheroac.MOD_ID, "vetheroac"),
             FabricItemGroup.builder().displayName(Text.of("Vetheroac"))
-                    .icon(() -> new ItemStack(Blocks.TNT)).entries((displayContext, entries) -> {
+                    .icon(() -> new ItemStack(VetheroacBlocks.Rain_Tnt_Block)).entries((displayContext, entries) -> {
 
                         entries.add(Items.FLINT_AND_STEEL);
-                        entries.add(VetheroacItems.Clear_Physics_Entities);
-
                         entries.add(Items.TNT);
 
+                        entries.add(VetheroacItems.Clear_Physics_Entities);
                         entries.add(VetheroacItems.Tnt_Launcher);
 
                         entries.add(VetheroacBlocks.Powerful_Tnt_Block);
