@@ -1,4 +1,4 @@
-package dev.redstone.vetheroac.Lib;
+package dev.redstone.vetheroac.lib;
 
 import dev.redstone.vetheroac.block.VetheroacBlocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;

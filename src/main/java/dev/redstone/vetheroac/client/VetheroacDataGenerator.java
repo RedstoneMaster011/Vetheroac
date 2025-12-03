@@ -1,8 +1,8 @@
 package dev.redstone.vetheroac.client;
 
-import dev.redstone.vetheroac.Lib.BlockLootTableLibrary;
-import dev.redstone.vetheroac.Lib.ModelLibrary;
-import dev.redstone.vetheroac.Lib.RecipeLibrary;
+import dev.redstone.vetheroac.lib.BlockLootTableLibrary;
+import dev.redstone.vetheroac.lib.ModelLibrary;
+import dev.redstone.vetheroac.lib.RecipeLibrary;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 

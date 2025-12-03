@@ -14,7 +14,7 @@ public class Vetheroac implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        System.out.println("Registering Modded");
+        System.out.println("Registering Physics");
 
         VetheroacBodys.register();
 
