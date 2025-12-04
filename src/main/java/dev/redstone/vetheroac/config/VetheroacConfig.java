@@ -32,6 +32,10 @@ public class VetheroacConfig extends Config {
         @Comment("Enables physics-based ragdoll when a 'Player' dies")
         @Name("Ragdoll On Death")
         public boolean RagdollOnDeath = true;
+
+        @Comment("Time After Physics Entity Until They Disapear")
+        @Name("Time until Physics Remove")
+        public int TimeUntilRemove = 300;
     }
 
     public LuckyTntSection LuckyTntSection = new LuckyTntSection();

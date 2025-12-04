@@ -3,6 +3,8 @@ package dev.redstone.vetheroac.mixin;
 import com.github.stephengold.joltjni.Quat;
 import com.github.stephengold.joltjni.RVec3;
 import com.github.stephengold.joltjni.enumerate.EActivation;
+import dev.redstone.vetheroac.util.SpawnPhysicsBlock;
+import dev.redstone.vetheroac.util.WaitBeforeExecuting;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.EntityType;
@@ -17,6 +19,7 @@ import net.xmx.velthoric.builtin.VxRegisteredBodies;
 import net.xmx.velthoric.builtin.block.BlockRigidBody;
 import net.xmx.velthoric.math.VxTransform;
 import net.xmx.velthoric.physics.body.manager.VxBodyManager;
+import net.xmx.velthoric.physics.body.manager.VxRemovalReason;
 import net.xmx.velthoric.physics.world.VxPhysicsWorld;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -46,47 +49,26 @@ public class ServerWorldMixin {
             if (state.isOf(Blocks.LAVA)) continue;
             if (state.isOf(Blocks.REINFORCED_DEEPSLATE)) continue;
             if (state.isOf(Blocks.TNT)) continue;
-            VxPhysicsWorld physicsWorld = VxPhysicsWorld.get(world.getRegistryKey());
-            VxBodyManager bodyManager = physicsWorld.getBodyManager();
 
-
-            BlockState originalState = state;
-
-            RVec3 position = new RVec3(pos.getX(), pos.getY(), pos.getZ());
-            Quat rotation = Quat.sIdentity();
-            VxTransform transform = new VxTransform(position, rotation);
-
-            BlockRigidBody body = bodyManager.createRigidBody(
-                    VxRegisteredBodies.BLOCK,
-                    transform,
-                    EActivation.Activate,
-                    b -> b.setRepresentedBlockState(originalState != null ? originalState : Blocks.STONE.getDefaultState())
-            );
-
-
+            SpawnPhysicsBlock.spawn(state, world, pos);
 
         }
 
-        server.submit(() -> {
-            server.submit(() -> {
-                server.submit(() -> {
-                    server.submit(() -> {
-                        for (int i = 0; i < VetheroacConfigs.VetheroacConfig.MiscSection.PowerTNT.get(); i++) {
-                            Vec3d spawnPos = Vec3d.ofCenter(origin).add(0, -2, 0);
+        WaitBeforeExecuting.execute(4, () -> {
 
-                            ServerWorld serverWorld = world;
-                            EndCrystalEntity crystal = new EndCrystalEntity(EntityType.END_CRYSTAL, serverWorld);
-                            crystal.refreshPositionAndAngles(spawnPos.x, spawnPos.y, spawnPos.z, 0.0F, 0.0F);
-                            crystal.setShowBottom(false);
+            for (int i = 0; i < VetheroacConfigs.VetheroacConfig.MiscSection.PowerTNT.get(); i++) {
+                Vec3d spawnPos = Vec3d.ofCenter(origin).add(0, -2, 0);
 
-                            if (serverWorld.spawnEntity(crystal)) {
-                                serverWorld.createExplosion(crystal, spawnPos.x, spawnPos.y, spawnPos.z, 3.0F, World.ExplosionSourceType.BLOCK);
-                                crystal.discard();
-                            }
-                        }
-                    });
-                });
-            });
+                ServerWorld serverWorld = world;
+                EndCrystalEntity crystal = new EndCrystalEntity(EntityType.END_CRYSTAL, serverWorld);
+                crystal.refreshPositionAndAngles(spawnPos.x, spawnPos.y, spawnPos.z, 0.0F, 0.0F);
+                crystal.setShowBottom(false);
+
+                if (serverWorld.spawnEntity(crystal)) {
+                    serverWorld.createExplosion(crystal, spawnPos.x, spawnPos.y, spawnPos.z, 3.0F, World.ExplosionSourceType.BLOCK);
+                    crystal.discard();
+                }
+            }
         });
     }
 }

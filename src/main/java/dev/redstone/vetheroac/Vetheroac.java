@@ -7,6 +7,7 @@ import dev.redstone.vetheroac.entity.VetheroacEntities;
 import dev.redstone.vetheroac.item.ItemList;
 import dev.redstone.vetheroac.item.VetheroacItems;
 import dev.redstone.vetheroac.physics.VetheroacBodys;
+import dev.redstone.vetheroac.util.WaitBeforeExecuting;
 import net.fabricmc.api.ModInitializer;
 
 public class Vetheroac implements ModInitializer {
@@ -29,6 +30,8 @@ public class Vetheroac implements ModInitializer {
         VetheroacBlockEntities.register();
 
         ItemList.RegisterItemList();
+
+        WaitBeforeExecuting.init();
 
     }
 }
