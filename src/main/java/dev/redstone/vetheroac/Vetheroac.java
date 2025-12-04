@@ -26,10 +26,9 @@ public class Vetheroac implements ModInitializer {
 
         VetheroacBlocks.RegisterBlocks();
         VetheroacItems.RegisterItems();
+        ItemList.RegisterItemList();
 
         VetheroacBlockEntities.register();
-
-        ItemList.RegisterItemList();
 
         WaitBeforeExecuting.init();
 
