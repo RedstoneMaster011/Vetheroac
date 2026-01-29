@@ -37,8 +37,8 @@ public class Rex8916Entity extends PathAwareEntity {
     public boolean tryAttack(Entity target) {
         boolean success = super.tryAttack(target);
         if (success) {
-            this.swingHand(Hand.MAIN_HAND); // Triggers animation
-            this.setAttacking(true);        // Triggers pose
+            this.swingHand(Hand.MAIN_HAND);
+            this.setAttacking(true);
         }
         return success;
     }
@@ -46,6 +46,6 @@ public class Rex8916Entity extends PathAwareEntity {
     @Override
     public void tick() {
         super.tick();
-        this.tickHandSwing(); // Ensures swing animation updates
+        this.tickHandSwing();
     }
 }
